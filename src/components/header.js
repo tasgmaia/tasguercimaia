@@ -4,12 +4,20 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    // style={{
+    //   background: `rebeccapurple`,
+    //   marginBottom: `1.45rem`,
+    // }}
   >
-    <div
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+          />
+          <style>
+            @import
+            url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Nanum+Myeongjo&display=swap');
+          </style>
+    {/* <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -27,7 +35,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </div> */}
   </header>
 )
 
