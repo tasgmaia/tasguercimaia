@@ -17,7 +17,7 @@ const IndexPage = () => (
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
      <div className="ma4-ns pa5-ns flex w-80-l flex-column flex-row-ns ph4 mt4">
-      <div className="mt3">
+      <div className="mb3">
         <svg
           width="50"
           height="50"
@@ -33,8 +33,8 @@ const IndexPage = () => (
           />
         </svg>
       </div>
-      <div className=" ph4-ns pt3">
-        <p class="intro-text modify">
+      <div className=" ph4-ns">
+        <p>
           Hey, call me Tas. I am a designer transforming the commerce industry
           at{' '}
           <a href="https://vtex.com/us-en/" target="_blank" class="link">
@@ -42,29 +42,29 @@ const IndexPage = () => (
           </a>
           .
         </p>
-        <div class="intre-hidden-text">
-          <p class="intro-text modify">
+        <div>
+          <p>
             I started my career as a designer after technical school.
             Subsequently, I worked as a design assistant at an advertising
             agency, and then I began my undergrad. Since this time, I have had
             multiple experiences with graphic and digital design.
           </p>
-          <p class="intro-text modify">
+          <p>
             I also spent some time in the US, studying &nbsp;Service Design.
             When I get back to Brazil I worked for small startups and two
             Brazilian unicorns,{' '}
-            <a href="https://www.stone.com.br/" target="_blank" class="link">
+            <a href="https://www.stone.com.br/" target="_blank" className="link">
               Stone
             </a>{' '}
             payments, listed in Nasdaq, and VTEX, the biggest e-commerce
             platform in LATAM. &nbsp;
           </p>
-          <p class="intro-text modify">
+          <p>
             Find me on{' '}
             <a
               href="https://medium.com/@tasguerci"
               target="_blank"
-              class="link"
+              className="link"
             >
               Medium
             </a>
@@ -72,7 +72,7 @@ const IndexPage = () => (
             <a
               href="https://www.linkedin.com/in/tasguerci/"
               target="_blank"
-              class="link"
+              className="link"
             >
               Linkedin
             </a>{' '}
@@ -80,7 +80,7 @@ const IndexPage = () => (
             <a
               href="https://dribbble.com/tasguerci"
               target="_blank"
-              class="link"
+              className="link"
             > Dribble</a>
           </p>
         </div>
