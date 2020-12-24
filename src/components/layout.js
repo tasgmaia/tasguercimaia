@@ -26,10 +26,19 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <html lang="en" />
+          <link
+            rel="stylesheet"
+            href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+          />
+          <style>
+            @import
+            url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Nanum+Myeongjo&display=swap');
+          </style>
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
+          // margin: `0 auto`,
+          // maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

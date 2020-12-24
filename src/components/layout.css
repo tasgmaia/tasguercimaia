@@ -1,3 +1,8 @@
+* {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 22px;
+  line-height: 40px;
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -51,12 +56,23 @@ template {
   display: none;
 }
 a {
+  text-decoration: none;
   background-color: transparent;
+  color: #a7a7a7;
   -webkit-text-decoration-skip: objects;
+}
+.pointer:hover {
+  cursor: pointer;
 }
 a:active,
 a:hover {
-  outline-width: 0;
+  color: #0007ba;
+
+}
+link:active,
+link:hover {
+  color: #0007ba;
+  cursor: pointer;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
