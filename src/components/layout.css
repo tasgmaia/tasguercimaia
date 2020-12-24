@@ -3,7 +3,19 @@
   font-size: 24px;
   line-height: 40px;
 }
+.link{
+  text-decoration: none;
+  color: #a5a5a5;
+  font-weight: 900;
+}
+.link:active,
+.link:hover {
+  text-decoration: line-through;
+  color: #0007dd;
+  cursor: pointer;
+}
 
+/* Default css */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

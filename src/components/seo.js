@@ -76,7 +76,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Hey, call me Tas. I'm a digital product designer working to improve people's lives. I love to design solutions through empathy, collaboration, and listening to users`,
 }
 
 SEO.propTypes = {
