@@ -68,6 +68,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: 'og:image',
+          content: 'src/images/tas_maia_og_image.png'
+        },
       ].concat(meta)}
     />
   )
