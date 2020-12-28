@@ -9,14 +9,10 @@ const Header = ({ siteTitle }) => (
     //   marginBottom: `1.45rem`,
     // }}
   >
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
-          />
-          <style>
-            @import
-            url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Nanum+Myeongjo&display=swap');
-          </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+          
     {/* <div
       style={{
         margin: `0 auto`,
