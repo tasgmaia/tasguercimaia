@@ -1,0 +1,10 @@
+# Group 1
+User-agent: Googlebot
+Disallow: /page-2/
+Disallow: /using-typescript/
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: https://jonatasmaia.com/sitemap.xml

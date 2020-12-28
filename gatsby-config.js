@@ -3,8 +3,9 @@ module.exports = {
     title: `Digital Product Designer`,
     description: `Building compelling experiences trough digital products that help people on daily tasks.`,
     author: `@TasGuerciMaia`,
+    siteUrl: 'https://jonatasmaia.com/',
     SocialMedia : {
-      github: "https://github.com/tasGuerciMaia",
+      github: "https://github.com/tasgmaia",
       dribbble: "https://dribbble.com/tasguerci",
       instagram: "https://www.instagram.com/tasmaia/",
       linkedin: "https://www.linkedin.com/in/tasguerci/",
@@ -29,6 +30,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
