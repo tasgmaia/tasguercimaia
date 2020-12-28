@@ -3,6 +3,12 @@ module.exports = {
     title: `Digital Product Designer`,
     description: `Building compelling experiences trough digital products that help people on daily tasks.`,
     author: `@TasGuerciMaia`,
+    SocialMedia : {
+      github: "https://github.com/tasGuerciMaia",
+      dribbble: "https://dribbble.com/tasguerci",
+      instagram: "https://www.instagram.com/tasmaia/",
+      linkedin: "https://www.linkedin.com/in/tasguerci/",
+    }
   },
   plugins: [
     //TAG MANAGER CONFIG
