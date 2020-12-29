@@ -26,7 +26,13 @@ body {
   UNDERLINE MAGICAL LINK ANIMATION - from Will King
   https://codepen.io/Wking/pen/BdmpVx 
 	*/
-	
+	.profileImage{
+		width: 450px;
+		height: 1000px;
+		background-image: url(../images/about-image.png);
+		background-size: cover;
+		margin-top: 30px;
+	}
 	.underline-link {
 		background-image: linear-gradient(120deg, #e9f0f4 0%, #e9f0f4 100%);
 		background-repeat: no-repeat;
@@ -41,7 +47,7 @@ body {
 			background-size: 100% 100%;
 			text-decoration: none;
 	}
-	
+
 /* Custom Colors */
 .ac1 {
 	color: #0007dd;
