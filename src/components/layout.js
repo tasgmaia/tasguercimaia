@@ -30,10 +30,10 @@ const Layout = ({ children }) => {
       <html lang="en" />
           
       <div
+      className="pv6-ns pt5 "
         style={{
           margin: `0 auto`,
           maxWidth: 1400,
-          // padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
