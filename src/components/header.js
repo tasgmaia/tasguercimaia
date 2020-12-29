@@ -5,10 +5,7 @@ import Logo from "./logo.js"
 
 const Header = ({ siteTitle }) => (
   <header
-  // style={{
-  //   background: `rebeccapurple`,
-  //   marginBottom: `1.45rem`,
-  // }}
+  className='pa2 pt4 ph4-ns pt4-ns fixed-ns w-100'
   >
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -24,16 +21,17 @@ const Header = ({ siteTitle }) => (
       className='flex justify-between'
       style={{
         margin: `0 auto`,
-        maxWidth: 1400,
-        padding: `1.45rem 1.0875rem`,
+        maxWidth: 2000,
       }}
     >
-      <Logo/>
-      <div style={{ margin: 0 }}>
-        <Link className='ph2 f5' to="/"> Home </Link>
-        <Link className='ph2 f5' to="/"> About </Link>
-        <Link className='ph2 f5' to="/"> Work </Link>
-        <Link className='ph2 f5' to="/"> Process </Link>
+      <Link to="/">
+        <Logo/>
+      </Link>
+      <div style={{ margin: 0 }} className="flex flex-column">
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Home </Link>
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> About </Link>
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Work </Link>
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Process </Link>
       </div>
     </div>
   </header>
