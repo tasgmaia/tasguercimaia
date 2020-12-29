@@ -5,7 +5,7 @@ import Logo from "./logo.js"
 
 const Header = ({ siteTitle }) => (
   <header
-  className='pa2 pt4 ph4-ns pt4-ns fixed-ns w-100'
+  className='pa2 pt3 ph4-ns pt4-ns fixed-ns absolute w-100'
   >
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -28,10 +28,12 @@ const Header = ({ siteTitle }) => (
         <Logo/>
       </Link>
       <div style={{ margin: 0 }} className="flex flex-column">
-        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Home </Link>
+        {/* <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Home </Link> */}
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> About </Link>
-        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Work </Link>
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Articles </Link>
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Contact </Link>
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Process </Link>
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Work </Link>
       </div>
     </div>
   </header>

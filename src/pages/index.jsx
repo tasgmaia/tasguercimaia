@@ -16,18 +16,22 @@ const IndexPage = () => (
     </div>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
-    <div className="ph5-ns ma3 pv6-ns">
+    
+    {/* HERO BEGINING*/}
+    <div className="ph5-ns ma3 pv6-ns mv6 pt5">
       <div >
-        <p className="normal gray-e f-subheadline-l lh-title f1">
+        <p className="normal gray-e f-subheadline-l lh-title f2">
           Hey, call me Tas. I am a designer transforming the commerce industry
           at{" "}
-          <a href="https://vtex.com/us-en/" target="_blank" class="underline-link normal gray-e f-headline-l lh-title f1" >VTEX</a>.
+          <a href="https://vtex.com/us-en/" target="_blank" class="underline-link normal gray-e f-headline-l lh-title f2" >VTEX</a>.
         </p>
       </div>
     </div>
+    {/* HERO END*/}
     <div className='w-100 vh-100 bg-blue'>
 
     </div>
+    
   </Layout>
 )
 
