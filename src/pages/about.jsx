@@ -27,6 +27,22 @@ const About = () => (
           Stone payments, listed in Nasdaq, and VTEX, the biggest e-commerce
           platform in LATAM.
         </p>
+        <h3 className="mb1 normal mt5">
+        Work experience
+        </h3>
+        <a>
+        View my resumé or check my Linkedin
+        </a>
+        <ul className="list pl1">
+        <li>
+          <p> 2012 - 2013</p>
+          <p>Latina - Adverteising agency</p>
+        </li>
+        <li>
+          <p>2012 - 2013</p>
+          <p>Latina - Adverteising agency</p>
+        </li>
+      </ul>
       </div>
       <div className="profileImage"></div>
     </div>
