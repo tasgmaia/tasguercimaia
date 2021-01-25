@@ -22,6 +22,14 @@ body {
 	font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+.barlow{
+		font-family: Barlow, sans-serif;
+}
+.barlow-m{
+		font-family: Barlow;
+		font-style: normal;
+		font-weight: 500;
+}
 /*
   UNDERLINE MAGICAL LINK ANIMATION - from Will King
   https://codepen.io/Wking/pen/BdmpVx 
