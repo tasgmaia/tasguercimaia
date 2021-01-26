@@ -18,7 +18,7 @@ const IndexPage = () => (
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
 
     {/* HERO BEGINING*/}
-    <div className="ph5-ns ma3 pt6 pa5-ns">
+    <div className="ph5-ns ma3 mt0-ns mt5 pt6 pa5-ns">
       <div >
         <p className="normal gray-e f-subheadline-l lh-title f2">
           Hey, call me Tas. I am a designer transforming the commerce industry
