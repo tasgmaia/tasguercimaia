@@ -1,7 +1,7 @@
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	font: 112.5%/1.45em georgia, serif, sans-serif;
+	font: 112.5%/1.45em "Nanum Myeongjo", serif, sans-serif;
 	box-sizing: border-box;
 	overflow-y: scroll;
 }
@@ -11,7 +11,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: hsla(0, 0%, 0%, 0.8);
-	font-family: "Nanum Myeongjo", serif;
 	line-height: 40px;
 	font-weight: normal;
 	word-wrap: break-word;
@@ -30,25 +29,52 @@ body {
 		font-style: normal;
 		font-weight: 500;
 }
+
+svg{
+	fill: #000368;
+}
+svg:hover {
+  fill: #0007dd;
+}
+
+/* CASES */
+.caseStone{
+	background-image: url(../images/cover-stone.png);
+	max-width: 100%;
+	background-position-x: center;
+	background-position-y: 60px;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	height: 500px;
+	background-color: #e9f4eb;
+}
+
+.caseVTEX{
+	background-image: url(../images/cover-vtex.png);
+	max-width: 100%;
+	background-position-x: center;
+	background-position-y: bottom;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	height: 500px;
+	background-color: #FAD9D2;
+}
 /*
   UNDERLINE MAGICAL LINK ANIMATION - from Will King
   https://codepen.io/Wking/pen/BdmpVx 
 	*/
-	.profileImage{
-		width: 450px;
-		max-width: 100%;
-		height: 1000px;
-		background-image: url(../images/about-image.png);
-		background-size: cover;
-		margin-top: 30px;
-	}
 
-	.profileImageMobile{
+	.profileImage{
 		width: 450px;
 		max-width: 100%;
 		height: 500px;
 		background-image: url(../images/about-image.png);
 		background-size: cover;
+	}
+
+	.contentMW{
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 	.underline-link {
@@ -61,7 +87,7 @@ body {
 	}
 		.underline-link:active,
 		.underline-link:hover {
-			color:fafafa;
+			color:#0007dd;
 			background-size: 100% 100%;
 			text-decoration: none;
 	}
@@ -73,11 +99,12 @@ body {
 		background-position: 0 88%;
 		transition: background-size 0.25s ease-in;
 		text-decoration: none;
+		color: #fafafa;
 	}
 		.underline-link-inverted:active,
 		.underline-link-inverted:hover {
-			color:fafafa;
-			background-image: linear-gradient(120deg, #131313 0%, #131313 100%);
+			color:#0007dd;
+			background-image: linear-gradient(120deg, #e9f0f4 0%, #e9f0f4 100%);
 			background-size: 100% 100%;
 			text-decoration: none;
 	}

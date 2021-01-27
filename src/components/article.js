@@ -6,14 +6,14 @@ import React from "react"
 import "./layout.css"
 
 function Article(props) {
-  return <div className="base-w w-100">
-    <div className="barlow">
+  return <div className="base-w">
+    <div className="pa1 f5 barlow">
     {props.publication}
     </div>
-    <div className="f3 lh-copy">
+    <div className="f4 pa1 lh-copy">
     {props.title}
     </div>
-    <a href={props.link} className="underline-link-inverted barlow no-underline base-w" >read article →</a>
+    <a href={props.link} target="_blank" className="underline-link-inverted pa1 barlow no-underline base-w f6" >read article →</a>
     </div>;
 }
 

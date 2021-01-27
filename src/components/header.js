@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
       className='flex justify-between'
       style={{
         margin: `0 auto`,
-        maxWidth: 2000,
+        maxWidth: 1550,
       }}
     >
       <Link to="/">
@@ -30,8 +30,8 @@ const Header = ({ siteTitle }) => (
       <div style={{ margin: 0 }} className="flex flex-column">
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Home </Link>
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/about"> About </Link>
-        {/* <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Articles </Link>
-        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Contact </Link>
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="http://localhost:8000/#articles"> Articles </Link>
+        {/* <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Contact </Link>
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Process </Link>
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Work </Link> */}
       </div>

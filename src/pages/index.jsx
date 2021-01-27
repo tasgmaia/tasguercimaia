@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import Image from "../components/profileimage"
 import SEO from "../components/seo"
 import Article from "../components/article"
+import Case from "../components/case"
+import ArticleList from "../components/articleList"
+import SectionTitle from "../components/sectionTitle"
 
 const IndexPage = () => (
   <Layout>
@@ -29,34 +32,40 @@ const IndexPage = () => (
       </div>
     </div>
     {/* HERO END*/}
-    <div className='w-100 bg-ac2 pa5'>
-      <div className="flex justify-between">
-        <div className="base-w w-40">
-          <h1 className="mt2 f2">Articles</h1>
-          <p className="barlow f4 lh-copy">Over the years I spent sometime sharing what I've leaned and thoght about design. 
-            Here I share the articles that I like most. For more check my medium
-          </p>
+    {/* CASES BEGINING*/}
+    <div id="work" className='w-100 mt6 contentMW'>
+      <Case
+        CaseImage="caseStone"
+        company="Stone"
+        title="Teste do case"
+        link="/about"
+      />
+      <Case
+        CaseImage="caseVTEX"
+        company="VTEX"
+        title="Teste do case"
+        link="/about"
+      />
+    </div>
+    {/* CASES END*/}
+    {/* ARTICLES BEGINING*/}
+    <div id="articles" className='contentMW w-100 bg-ac2 pa5-ns pa3 pv4 mt4'>
+      <div className="flex-ns justify-between">
+
+        <div className="base-w w-40-ns w-100">
+          <SectionTitle
+            SectionName="Articles"
+            SectionSubTitle="Over the years I spent sometime sharing what I've leaned and thoght about design. 
+            Here I share the articles that I like most. For more check my medium"
+          />
         </div>
-        <div className="w-40">
-        <div>
-            <Article 
-              publication="UX Collective  🇧🇷" 
-              title="An information architecture methodology, organizing and making sense of things"
-              link="https://uxplanet.org/easily-calculate-sus-score-a464d753e5aa"
-            />
-          </div>
-          <div className="mt4">
-            <Article 
-              publication="UX Collective  🇧🇷" 
-              title="An information architecture methodology, organizing and making sense of things"
-              link="https://uxplanet.org/easily-calculate-sus-score-a464d753e5aa"
-            />
-          </div>
-          
+
+        <div className="w-50-ns w-100 mt0-ns mt4 pr2">
+          <ArticleList/>        
         </div>
       </div>
     </div>
-    
+    {/* ARTICLES END*/}
   </Layout>
 )
 

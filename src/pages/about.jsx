@@ -8,7 +8,7 @@ const About = () => (
   <Layout>
     <SEO title="Page two" />
     <div className="flex w-100 justify-center flex-row-ns flex-column">
-    <div className="profileImageMobile dn-ns db"></div>
+    <div className="profileImage dn-ns db"></div>
       <div className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 lh-copy pr5-ns">
         <p>
         I started my career as a designer after technical school. I worked as a design assistant at an advertising agency, and after a while, I began my undergrad. Since this time, I have had multiple experiences with both graphic and digital design.

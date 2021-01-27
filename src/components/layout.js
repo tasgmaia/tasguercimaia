@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <html lang="en" />
           
       <div
-      className="pv6-ns pt5-ns pt0 "
+      className="pt6-ns pt0 "
         style={{
           margin: `0 auto`,
           maxWidth: 1400,
