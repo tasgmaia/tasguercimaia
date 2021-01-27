@@ -28,9 +28,9 @@ const IndexPage = () => (
       </div>
     </div>
     {/* HERO END*/}
-    <div className='w-100 vh-100 bg-blue'>
+    {/* <div className='w-100 vh-100 bg-blue'>
 
-    </div>
+    </div> */}
     
   </Layout>
 )
