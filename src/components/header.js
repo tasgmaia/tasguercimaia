@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
         <Logo/>
       </Link>
       <div style={{ margin: 0 }} className="flex flex-column">
-        {/* <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Home </Link> */}
+        <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Home </Link>
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/about"> About </Link>
         {/* <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Articles </Link>
         <Link className='mh2-ns f4-ns f5 base-b underline-link' to="/"> Contact </Link>

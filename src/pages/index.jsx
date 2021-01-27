@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/profileimage"
 import SEO from "../components/seo"
+import Article from "../components/article"
 
 const IndexPage = () => (
   <Layout>
@@ -28,9 +29,33 @@ const IndexPage = () => (
       </div>
     </div>
     {/* HERO END*/}
-    {/* <div className='w-100 vh-100 bg-blue'>
-
-    </div> */}
+    <div className='w-100 bg-ac2 pa5'>
+      <div className="flex justify-between">
+        <div className="base-w w-40">
+          <h1 className="mt2 f2">Articles</h1>
+          <p className="barlow f4 lh-copy">Over the years I spent sometime sharing what I've leaned and thoght about design. 
+            Here I share the articles that I like most. For more check my medium
+          </p>
+        </div>
+        <div className="w-40">
+        <div>
+            <Article 
+              publication="UX Collective  🇧🇷" 
+              title="An information architecture methodology, organizing and making sense of things"
+              link="https://uxplanet.org/easily-calculate-sus-score-a464d753e5aa"
+            />
+          </div>
+          <div className="mt4">
+            <Article 
+              publication="UX Collective  🇧🇷" 
+              title="An information architecture methodology, organizing and making sense of things"
+              link="https://uxplanet.org/easily-calculate-sus-score-a464d753e5aa"
+            />
+          </div>
+          
+        </div>
+      </div>
+    </div>
     
   </Layout>
 )
