@@ -9,30 +9,23 @@ const About = () => (
     <SEO title="Page two" />
     <div className="flex w-100 justify-center flex-row-ns flex-column">
     <div className="profileImageMobile dn-ns db"></div>
-      <div className="w-40-ns  f3-ns f5 ma0-ns ma3 lh-copy pr5-ns">
+      <div className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 lh-copy pr5-ns">
         <p>
-          I started my career as a designer after technical school.
-          Subsequently, I worked as a design assistant at an advertising agency,
-          and then I began my undergrad. Since this time, I have had multiple
-          experiences with graphic and digital design.
+        I started my career as a designer after technical school. I worked as a design assistant at an advertising agency, and after a while, I began my undergrad. Since this time, I have had multiple experiences with both graphic and digital design.
         </p>
         <p>
-          I also spent some time in the US, studying Service Design. When I get
-          back to Brazil I worked for small startups and two Brazilian unicorns,
-          Stone payments, listed in Nasdaq, and VTEX, the biggest e-commerce
-          platform in LATAM.
+        During my undergrad, I had the opportunity to spend two years in the US as an exchange student. There I could learn much more about digital and service design. The knowledge I gathered there help me to build systemic thinking and a structured process until these days.
         </p>
         <p>
-          I also spent some time in the US, studying Service Design. When I get
-          back to Brazil I worked for small startups and two Brazilian unicorns,
-          Stone payments, listed in Nasdaq, and VTEX, the biggest e-commerce
-          platform in LATAM.
+        When I got back to Brazil  I continued my path in the direction of becoming a  product designer. I worked on a digital agency that helped digital entrepreneurs to build and test concepts. After a while, I started to work on more structured companies. I helped to shape experiences on two Brazilian unicorns when they were scaling their business and products. 
         </p>
-        <h3 className="mb1 normal mt5 b gray-e f3-ns f4">
+        <h3 className="mb1 normal mt6 b gray-e f3-ns f4">
         Work experience
         </h3>
         <a className="barlow gray-d f4-ns f6">
-        View my resumé or check my Linkedin
+        For more information go to my
+          at{" "}
+          <a href="https://www.linkedin.com/in/tasguerci/" target="_blank" class="underline-link normal gray-e" >Linkedin</a>.
         </a>
       
 
