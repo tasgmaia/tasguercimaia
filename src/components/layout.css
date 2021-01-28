@@ -33,9 +33,20 @@ body {
 
 svg{
 	fill: #000368;
+	transition: 0.25s ease-in;
+	transition: 0.25s ease-in;
+	-webkit-transition: 0.25s ease-in;
+	-moz-transition: 0.25s ease-in;
+	-o-transition: 0.25s ease-in;
+	transition: 0.25s ease-in;
 }
 svg:hover {
-  fill: #0007dd;
+	fill: #0007dd;
+	transition: 0.25s ease-in;
+	-webkit-transition: 0.25s ease-in;
+	-moz-transition: 0.25s ease-in;
+	-o-transition: 0.25s ease-in;
+	transition: 0.25s ease-in;
 }
 
 /* CASES */
@@ -129,12 +140,21 @@ svg:hover {
 
 	.articleLink {
 		transition: 0.25s ease-in;
+		-webkit-transition: 0.25s ease-in;
+		-moz-transition: 0.25s ease-in;
+		-o-transition: 0.25s ease-in;
+		transition: 0.25s ease-in;
 		text-decoration: none;
 		color: #fafafa;
 		border-radius: 4px;
 	}
 		.articleLink:active,
 		.articleLink:hover {
+			transition: 0.25s ease-in;
+			-webkit-transition: 0.25s ease-in;
+			-moz-transition: 0.25s ease-in;
+			-o-transition: 0.25s ease-in;
+			transition: 0.25s ease-in;
 			background-color:#000484;
 			background-size: 100% 100%;
 			text-decoration: none;
