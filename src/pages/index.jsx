@@ -46,7 +46,7 @@ const IndexPage = () => (
         company="Stone Payments 2017"
         title="Mobile point of sale, reaching strategic markets."
         link="/about"
-        cta="soon"
+        cta="Soon"
         // cta="read article →"
       />
       <Case
@@ -54,7 +54,7 @@ const IndexPage = () => (
         company="VTEX ecommerce 2020"
         title="An enhanced and user centric customer service experience"
         link="/about"
-        cta="soon"
+        cta="Soon"
       />
     </div>
     {/* CASES END*/}
