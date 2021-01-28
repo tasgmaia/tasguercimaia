@@ -22,15 +22,15 @@ const IndexPage = () => (
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
 
     {/* HERO BEGINING*/}
-    <div className="ph5-ns ma3 mt0-ns mt5 pt6 pa5-ns">
+    <div id="home" className="ph5-ns ma3 mt0-ns mt5 pt6 pa5-ns">
       <div>
         <p className="normal gray-e f-subheadline-l lh-title f2">
-          Hey, call me Tas. I am a designer transforming the commerce industry
+          Hey, call me Tas. I am a product designer transforming the retail industry
           at{" "}
           <a
             href="https://vtex.com/us-en/"
             target="_blank"
-            class="underline-link normal gray-e f-headline-l lh-title f2"
+            class="underline-link normal ph2 gray-e f-headline-l lh-title f2"
           >
             VTEX
           </a>
@@ -52,7 +52,7 @@ const IndexPage = () => (
       <Case
         CaseImage="caseVTEX"
         company="VTEX ecommerce 2020"
-        title="An enhanced customer service experience"
+        title="An enhanced and user centric customer service experience"
         link="/about"
         cta="soon"
       />

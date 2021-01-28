@@ -4,6 +4,7 @@ html {
 	font: 112.5%/1.45em "Nanum Myeongjo", serif, sans-serif;
 	box-sizing: border-box;
 	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -41,9 +42,9 @@ svg:hover {
 .caseHolder{
 	color: #131313;
 }
-.caseHolder:hover{
+/* .caseHolder:hover{
 	color: #000368;
-}
+} */
 .caseStone{
 	background-image: url(../images/cover-stone.png);
 	max-width: 100%;
@@ -59,14 +60,14 @@ svg:hover {
 	background-color: #e9f4eb;
 }
 
-.caseHolder:hover .caseStone{
+/* .caseHolder:hover .caseStone{
 	background-size: 52%;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	transition: all .5s;
 	background-color: #dbf7e0;
-}
+} */
 
 .caseVTEX{
 	background-image: url(../images/cover-vtex.png);
@@ -83,14 +84,16 @@ svg:hover {
 	background-color: #FAD9D2;
 }
 
-.caseHolder:hover .caseVTEX{
+/* .caseHolder:hover .caseVTEX{
 	background-size: 82%;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	transition: all .5s;
 	background-color: #ffcec4;
-}
+} */
+
+
 /*
   UNDERLINE MAGICAL LINK ANIMATION - from Will King
   https://codepen.io/Wking/pen/BdmpVx 
@@ -144,6 +147,18 @@ svg:hover {
 @media screen and (max-width: 600px) {
 	.profileImage{
 		height: 500px;
+	}
+	.caseStone{
+    background-position-y: 30px;
+    background-size: 120%;
+    height: 250px;
+	}
+	.caseVTEX{
+    max-width: 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 110%;
+    height: 250px;
 	}
 }
 /* Custom Colors */
