@@ -48,7 +48,7 @@ const About = () => (
 
         <div className="bt bb gray-b mt4 pt2 pb2">
           <p className="barlow-m ma2 gray-c f5-ns f6">2012 - 2013</p>
-          <p className="ma2 gray-e b f4-ns f5">Latina - Adverteising agency</p>
+          <p className="ma2 gray-e b f4-ns f5">Latina - Advertising agency</p>
         </div>
 
         <div className="bb gray-b pt2 pb2">
@@ -65,7 +65,7 @@ const About = () => (
 
         <div className="bb gray-b pt2 pb2">
           <p className="barlow-m ma2 gray-c f5-ns f6">2016 - 2017</p>
-          <p className="ma2 gray-e b f4-ns f5">Rastro - Adverteising agency</p>
+          <p className="ma2 gray-e b f4-ns f5">Rastro - Advertising agency</p>
         </div>
 
         <div className="bb gray-b pt2 pb2">
