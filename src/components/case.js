@@ -19,7 +19,7 @@ function Case(props) {
     return <div className="no-underline base-b">
     <div className="mb6 caseHolder">
       <div className={props.CaseImage}>  </div>
-      <div className="w-third mt4">
+      <div className="w-third-ns w-100 ph0-ns ph3 mt4">
         <div className=" mv1 f5 barlow"> {props.company} </div>
         <div className="mv0 f3 lh-copy"> {props.title}</div>
         <div ClassName="mv1 f3">{props.cta}</div>

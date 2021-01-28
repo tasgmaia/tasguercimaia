@@ -9,21 +9,21 @@ const About = () => (
     <SEO title="Page two" />
     <div className="flex w-100 justify-center flex-row-ns flex-column">
       <div className="profileImage dn-ns db"></div>
-      <div className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 lh-copy pr5-ns">
+      <div className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 pr5-ns">
         <h3 className="mt0 normal b gray-e f3-ns f4">About</h3>
-        <p>
+        <p className="lh-copy">
           I started my career as a designer after technical school. I worked as
           a design assistant at an advertising agency, and after a while, I
           began my undergrad. Since this time, I have had multiple experiences
           with both graphic and digital design.
         </p>
-        <p>
+        <p className="lh-copy">
           During my undergrad, I had the opportunity to spend two years in the
           US as an exchange student. There I could learn much more about digital
           and service design. The knowledge I gathered there help me to build
           systemic thinking and a structured process until these days.
         </p>
-        <p>
+        <p className="lh-copy">
           When I got back to Brazil I continued my path in the direction of
           becoming a product designer. I worked on a digital agency that helped
           digital entrepreneurs to build and test concepts. After a while, I
@@ -35,7 +35,7 @@ const About = () => (
           Work experience
         </h3>
         <a className="barlow gray-d f4-ns f6">
-          For more information go to my at{" "}
+          For more information go to my{" "}
           <a
             href="https://www.linkedin.com/in/tasguerci/"
             target="_blank"

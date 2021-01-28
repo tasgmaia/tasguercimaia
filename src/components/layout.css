@@ -127,19 +127,15 @@ svg:hover {
 			text-decoration: none;
 	}
 
-	.underline-link-inverted {
-		background-image: linear-gradient(120deg, #000368 0%, #000368 100%);
-		background-repeat: no-repeat;
-		background-size: 100% 0.092em;
-		background-position: 0 88%;
-		transition: background-size 0.25s ease-in;
+	.articleLink {
+		transition: 0.25s ease-in;
 		text-decoration: none;
 		color: #fafafa;
+		border-radius: 4px;
 	}
-		.underline-link-inverted:active,
-		.underline-link-inverted:hover {
-			color:#0007dd;
-			background-image: linear-gradient(120deg, #e9f0f4 0%, #e9f0f4 100%);
+		.articleLink:active,
+		.articleLink:hover {
+			background-color:#000484;
 			background-size: 100% 100%;
 			text-decoration: none;
 	}
