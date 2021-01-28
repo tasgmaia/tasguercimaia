@@ -1,39 +1,243 @@
-* {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 24px;
-  line-height: 40px;
-}
-.link{
-  text-decoration: none;
-  color: #a5a5a5;
-  font-weight: 900;
-}
-.link:active,
-.link:hover {
-  text-decoration: line-through;
-  color: #0007dd;
-  cursor: pointer;
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font: 112.5%/1.45em "Nanum Myeongjo", serif, sans-serif;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
-/* Default css */
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: hsla(0, 0%, 0%, 0.8);
+	line-height: 40px;
+	font-weight: normal;
+	word-wrap: break-word;
+	font-kerning: normal;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+	font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+.barlow{
+		font-family: Barlow, sans-serif;
+}
+.barlow-m{
+		font-family: Barlow;
+		font-style: normal;
+		font-weight: 500;
+}
+
+svg{
+	fill: #000368;
+}
+svg:hover {
+  fill: #0007dd;
+}
+
+/* CASES */
+.caseHolder{
+	color: #131313;
+}
+/* .caseHolder:hover{
+	color: #000368;
+} */
+.caseStone{
+	background-image: url(../images/cover-stone.png);
+	max-width: 100%;
+	background-position-x: center;
+	background-position-y: 60px;
+	background-size: 50%;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	background-repeat: no-repeat;
+	height: 500px;
+	background-color: #e9f4eb;
+}
+
+/* .caseHolder:hover .caseStone{
+	background-size: 52%;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	background-color: #dbf7e0;
+} */
+
+.caseVTEX{
+	background-image: url(../images/cover-vtex.png);
+	max-width: 100%;
+	background-position-x: center;
+	background-position-y: bottom;
+	background-size: 80%;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	background-repeat: no-repeat;
+	height: 500px;
+	background-color: #FAD9D2;
+}
+
+/* .caseHolder:hover .caseVTEX{
+	background-size: 82%;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	background-color: #ffcec4;
+} */
+
+
+/*
+  UNDERLINE MAGICAL LINK ANIMATION - from Will King
+  https://codepen.io/Wking/pen/BdmpVx 
+	*/
+
+	.profileImage{
+		width: 450px;
+		max-width: 100%;
+		height: 1000px;
+		background-image: url(../images/about-image.png);
+		background-size: cover;
+	}
+
+	.contentMW{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.underline-link {
+		background-image: linear-gradient(120deg, #e9f0f4 0%, #e9f0f4 100%);
+		background-repeat: no-repeat;
+		background-size: 100% 0.092em;
+		background-position: 0 88%;
+		transition: background-size 0.25s ease-in;
+		text-decoration: none;
+	}
+		.underline-link:active,
+		.underline-link:hover {
+			color:#0007dd;
+			background-size: 100% 100%;
+			text-decoration: none;
+	}
+
+	.underline-link-inverted {
+		background-image: linear-gradient(120deg, #000368 0%, #000368 100%);
+		background-repeat: no-repeat;
+		background-size: 100% 0.092em;
+		background-position: 0 88%;
+		transition: background-size 0.25s ease-in;
+		text-decoration: none;
+		color: #fafafa;
+	}
+		.underline-link-inverted:active,
+		.underline-link-inverted:hover {
+			color:#0007dd;
+			background-image: linear-gradient(120deg, #e9f0f4 0%, #e9f0f4 100%);
+			background-size: 100% 100%;
+			text-decoration: none;
+	}
+/* Media querries */
+@media screen and (max-width: 600px) {
+	.profileImage{
+		height: 500px;
+	}
+	.caseStone{
+    background-position-y: 30px;
+    background-size: 120%;
+    height: 250px;
+	}
+	.caseVTEX{
+    max-width: 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 110%;
+    height: 250px;
+	}
+}
+/* Custom Colors */
+.ac1 {
+	color: #0007dd;
+}
+
+.bg-ac1 {
+	background-color: #0007dd;
+}
+
+.ac2 {
+	color: #000368;
+}
+
+.bg-ac2 {
+	background-color: #000368;
+}
+
+.ac3 {
+	color: #e9f0f4;
+}
+
+.bg-ac3 {
+	background-color: #e9f0f4;
+}
+
+.base-w {
+	color: #fafafa;
+}
+
+.bg-base-w {
+	background-color: #fafafa;
+}
+
+.base-b {
+	color: #131313;
+}
+
+.bg-base-b {
+	background-color: #131313;
+}
+
+.gray-a {
+	color: #EFEFEF;
+}
+
+.bg-gray-a {
+	background-color: #EFEFEF;
+}
+
+.gray-b {
+	color: #e5e5e5;
+}
+
+.bg-gray-b {
+	background-color: #e5e5e5;
+}
+
+.gray-c {
+	color: #b8b8b8;
+}
+
+.bg-gray-c {
+	background-color: #b8b8b8;
+}
+
+.gray-d {
+	color: #6d6d6d;
+}
+
+.bg-gray-d {
+	background-color: #6d6d6d;
+}
+
+.gray-e {
+	color: #484848;
+}
+
+.bg-gray-e {
+	background-color: #484848;
 }
