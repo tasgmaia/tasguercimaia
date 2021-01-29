@@ -6,7 +6,7 @@ import Profile from "../components/profileimage"
 
 const About = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="About" />
     <div className="flex w-100 justify-center flex-row-ns flex-column">
       <div className="profileImage dn-ns db"></div>
       <div className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 pr5-ns">
