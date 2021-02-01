@@ -11,7 +11,7 @@ import SectionTitle from "../components/sectionTitle"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Tas Guerci Maia" />
+    <SEO title="Home" />
     <div style={{ margin: `0 auto`, maxWidth: 1400,}}>
     {/* HERO BEGINING*/}
     <div
