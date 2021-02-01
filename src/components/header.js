@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
     />
 
     <div
-      className='flex justify-between'
+      className='flex justify-between header-m-d'
       style={{
         margin: `0 auto`,
         maxWidth: 1550,

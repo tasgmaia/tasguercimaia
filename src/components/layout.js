@@ -31,10 +31,10 @@ const Layout = ({ children }) => {
       <html lang="en" />
           
       <div
-      className="pt6-ns pt0 "
+      // className="pt6-ns pt0 "
         style={{
           margin: `0 auto`,
-          maxWidth: 1400,
+          // maxWidth: 1400,
         }}
       >
         <main>{children}</main>
