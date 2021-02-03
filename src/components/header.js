@@ -5,7 +5,7 @@ import Logo from "./logo.js"
 
 const Header = ({ siteTitle }) => (
   <header
-  className='pa2 pt3 ph4-ns pt4-ns fixed-ns absolute w-100'
+  className='pa2 pt3 ph4-ns pt4-ns fixed-ns absolute w-100 fade'
   >
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
