@@ -36,7 +36,7 @@ const IndexPage = () => (
     {/* HERO END*/}
     {/* CASES BEGINING*/}
     <div id="work" className="w-100 mt6 contentMW">
-      <Case
+      <Case interaction
         CaseImage="caseStone"
         company="Stone Payments 2017"
         title="Mobile point of sale, reaching strategic markets."
