@@ -9,21 +9,21 @@ function BigStatement(props) {
   return (
     <div className={props.bgClass}>
       <div className="contentMW pv6 flex items-center">
-        <div className="center">
-        <label className="mv0 barlow gray-d"> 
+        <div className="center pa4-ns">
+        <label className="mv0 barlow gray-d mh0-ns mh3"> 
           {props.label}
         </label>
-        <h2 className="mt0 f2-ns f4 normal pt1 lh-title mw7">
+        <h2 className="mt0 f2-ns f4 normal pt1 lh-title mh0-ns mh3 mw7">
           {props.Statement}
         </h2>
-        <div className="flex">
-          <p className="f5-ns barlow f3 lh-copy tj mr5 w-25 "> 
+        <div className="flex-ns">
+          <p className="f5-ns barlow f6 lh-copy tj mr4-ns mr3 ml0-ns ml3 w-third-ns "> 
             {props.col1}
           </p>
-          <p className="f5-ns barlow f3 lh-copy tj mr5 w-25 "> 
+          <p className="f5-ns barlow f6 lh-copy tj mr4-ns mr3 ml0-ns ml3 w-third-ns "> 
             {props.col2}
           </p>
-          <p className="f5-ns barlow f3 lh-copy tj w-25 "> 
+          <p className="f5-ns barlow f6 lh-copy tj mr4-ns mr3 ml0-ns ml3 w-third-ns "> 
             {props.col3}
           </p>
         </div>
