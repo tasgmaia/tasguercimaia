@@ -5,12 +5,15 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import CaseHero from "../components/caseHero"
 import BigStatement from "../components/bigStatement"
+import ImageLeft from "../components/imageLeft"
+import Process from "../components/process"
 
 const mPOS = () => (
   <Layout>
     <SEO title="Stone Payments" />
     <CaseHero
-      heroBG="mPOS-bg"
+      heroBG="bg-case-stone"
+      heroImage="mPOS-hero"
       label="Stone Payments 2018"
       title="Reaching strategic markets with a new mPOS"
       description="Stone was the fifth Brazilian unicorn and the first independent
@@ -25,7 +28,21 @@ const mPOS = () => (
       col2="The main business advantage, compared to our competitors, was that we had an operation based on personal relationships in small and medium cities. And we designed a singular solution that hadn't predecessor in the Brazilian market."
       bgClass="stone-leaf"
    />
-   
+  <ImageLeft
+    featuredImage="mPOS-featured"
+    label="Objective"
+    title="Empower small entrepreneurs without bank accounts."
+    description="Provide to these people an affordable financial solution to help them to achieve a sustainable business growth."
+    label2="User goal"
+    title2="Provide digital payment methods to their customers and manage their sales income."
+    description2=""
+  />
+  <Process
+    Step1="Research "
+    Step2="Strategy"
+    Step3="Flows"
+    Step4="Solution"
+  />
   </Layout>
 )
 

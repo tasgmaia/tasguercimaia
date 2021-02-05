@@ -92,13 +92,26 @@ svg:hover {
 
 /* CASES */
 /* CASES PAGE */
-.mPOS-bg{
+/* CASE STONE - IMAGES */
+.mPOS-hero{
 	background-image: url(../images/cover-stone.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 700px;
 	height: 680px;
 }
+.mPOS-featured{
+	background-image: url(../images/pinpad.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 650px;
+}
+/* .stone-leaf{
+	background-image: url(../images/leaf.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+} */
 /* INDEX */
 .caseHolder{
 	color: #131313;
@@ -226,7 +239,9 @@ svg:hover {
     background-size: 110%;
     height: 250px;
 	}
-	.mPOS-bg{ 
+
+	/* CASE STONE - IMAGES */
+	.mPOS-hero{ 
 		background-image: linear-gradient(to bottom, rgba(233, 244, 237, 0.05), rgba(233, 244, 237, 100)), url(../images/cover-stone.png);
 		background-size: 140%;
     background-repeat: no-repeat;
@@ -318,6 +333,6 @@ svg:hover {
 	background-color: #484848;
 }
 
-.bg-stone{
+.bg-case-stone{
 	background-color: #E9F4ED;
 }
