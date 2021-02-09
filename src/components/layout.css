@@ -5,9 +5,8 @@ html {
 	box-sizing: border-box;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
-	
 }
-    
+
 body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
@@ -23,44 +22,7 @@ body {
 	-webkit-font-feature-settings: "kern", "liga", "clig", "calt";
 	font-feature-settings: "kern", "liga", "clig", "calt";
 }
-.fade {
-	animation: fadein 2s;
-	-moz-animation: fadein 2s; 
-	-webkit-animation: fadein 2s; 
-	-o-animation: fadein 2s;
-}
-@keyframes fadein {
-	from {
-			opacity:0;
-	}
-	to {
-			opacity:1;
-	}
-}
-@-moz-keyframes fadein { /* Firefox */
-	from {
-			opacity:0;
-	}
-	to {
-			opacity:1;
-	}
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-	from {
-			opacity:0;
-	}
-	to {
-			opacity:1;
-	}
-}
-@-o-keyframes fadein { /* Opera */
-	from {
-			opacity:0;
-	}
-	to {
-			opacity: 1;
-	}
-}
+
 .barlow{
 		font-family: Barlow, sans-serif;
 }
@@ -78,8 +40,6 @@ svg{
 	-moz-transition: 0.25s ease-in;
 	-o-transition: 0.25s ease-in;
 	transition: 0.25s ease-in;
-	stroke: #fafafa; 
-	stroke-width: 0.2px
 }
 svg:hover {
 	fill: #0007dd;
@@ -91,28 +51,6 @@ svg:hover {
 }
 
 /* CASES */
-/* CASES PAGE */
-/* CASE STONE - IMAGES */
-.mPOS-hero{
-	background-image: url(../images/cover-stone.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 700px;
-	height: 680px;
-}
-.mPOS-featured{
-	background-image: url(../images/pinpad.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 600px;
-	height: 650px;
-}
-/* .stone-leaf{
-	background-image: url(../images/leaf.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-} */
-/* INDEX */
 .caseHolder{
 	color: #131313;
 }
@@ -239,18 +177,6 @@ svg:hover {
     background-size: 110%;
     height: 250px;
 	}
-
-	/* CASE STONE - IMAGES */
-	.mPOS-hero{ 
-		background-image: linear-gradient(to bottom, rgba(233, 244, 237, 0.05), rgba(233, 244, 237, 100)), url(../images/cover-stone.png);
-		background-size: 140%;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin-top: -85px;
-    background-position-x: right;
-    background-position-y: top;
-    height: 370px;
-	}
 }
 /* Custom Colors */
 .ac1 {
@@ -331,8 +257,4 @@ svg:hover {
 
 .bg-gray-e {
 	background-color: #484848;
-}
-
-.bg-case-stone{
-	background-color: #E9F4ED;
 }

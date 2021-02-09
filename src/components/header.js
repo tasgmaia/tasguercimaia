@@ -5,7 +5,7 @@ import Logo from "./logo.js"
 
 const Header = ({ siteTitle }) => (
   <header
-  className='fade z-1 pa2 pt3 ph4-ns pt4-ns fixed-ns absolute  w-100'
+  className='pa2 pt3 ph4-ns pt4-ns fixed-ns absolute w-100'
   >
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
     />
 
     <div
-      className='flex justify-between header-m-d'
+      className='flex justify-between'
       style={{
         margin: `0 auto`,
         maxWidth: 1550,

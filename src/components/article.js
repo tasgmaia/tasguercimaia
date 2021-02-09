@@ -7,7 +7,7 @@ import "./layout.css"
 
 function Article(props) {
   return <a href={props.link} target="_blank" className="bg-ac1 no-underline base-w">
-    <div className="articleLink pa3-ns">
+    <div className="articleLink pa3">
       <div className="pa1 f5 barlow">
       {props.publication}
       </div>

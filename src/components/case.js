@@ -6,8 +6,7 @@ import { Link } from "gatsby"
 import "./layout.css"
 
 function Case(props) {
-  // if (props.interaction == true) {
-  //   return <Link href={props.link} className="no-underline base-b">
+  // return <Link href={props.link} className="no-underline base-b">
   //   <div className="mb6-ns mb5 caseHolder">
   //     <div className={props.CaseImage}>  </div>
   //     <div className="w-third-ns w-100 ph0-ns ph3 mt4">
@@ -17,7 +16,6 @@ function Case(props) {
   //     </div>
   //   </div>
   //   </Link>
-  // } else {
     return <div className="no-underline base-b">
     <div className="mb6 caseHolder">
       <div className={props.CaseImage}>  </div>
@@ -28,7 +26,6 @@ function Case(props) {
       </div>
     </div>
     </div>
-  // }
 }
 
 export default Case
