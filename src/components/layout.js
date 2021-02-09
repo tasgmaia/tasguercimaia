@@ -26,16 +26,18 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    
+
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <html lang="en" />
           
       <div
-      className="pt6-ns pt0 "
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1400,
-        }}
+      className="fade"
+      // This style have to be on each page to allow full width heroes
+      // Use the class: contentMW locally
+      //   style={{
+      //     margin: `0 auto`,
+      //     maxWidth: 1400,
+      //   }}
       >
         <main>{children}</main>
         {/* <footer style={{
@@ -45,8 +47,8 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer> */}
+        <Footer/>
       </div>
-      <Footer/>
     </>
   )
 }

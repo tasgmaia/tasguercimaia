@@ -11,22 +11,17 @@ import SectionTitle from "../components/sectionTitle"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Tas Guerci Maia" />
-    {/* <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image - changed to logo />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
-
+    <SEO title="Home" />
+    <div style={{ margin: `0 auto`, maxWidth: 1400,}}>
     {/* HERO BEGINING*/}
-    <div id="home" className="ph5-ns ma3 mt0-ns mt5 pt6 pa5-ns">
+    <div
+      id="home"
+      className="ph5-ns ma3 mt0-ns mt5 pt6 pa5-ns"
+    >
       <div>
-        <p className="normal gray-e f-subheadline-l lh-title f2">
-          Hey, call me Tas. I am a product designer transforming the retail industry
-          at{" "}
+        <p className="normal pt6-ns gray-e f-subheadline-l lh-title f2">
+          Hey, call me Tas. I am a product designer transforming the retail
+          industry at{" "}
           <a
             href="https://vtex.com/us-en/"
             target="_blank"
@@ -41,11 +36,11 @@ const IndexPage = () => (
     {/* HERO END*/}
     {/* CASES BEGINING*/}
     <div id="work" className="w-100 mt6 contentMW">
-      <Case
+      <Case interaction
         CaseImage="caseStone"
         company="Stone Payments 2017"
         title="Mobile point of sale, reaching strategic markets."
-        link="/about"
+        link="/cases/mPOS.jsx"
         cta="Soon"
         // cta="read article →"
       />
@@ -76,6 +71,7 @@ const IndexPage = () => (
       </div>
     </div>
     {/* ARTICLES END*/}
+    </div>
   </Layout>
 )
 

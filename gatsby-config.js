@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Digital Product Designer`,
+    title: `Tas Guerci Maia Portfolio`,
     description: `Building compelling experiences trough digital products that help people on daily tasks.`,
     author: `@TasGuerciMaia`,
     siteUrl: 'https://jonatasmaia.com/',
