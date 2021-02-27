@@ -1,7 +1,5 @@
 import React from "react"
 
-import "./layout.css"
-
 const Footer = () => (
   <footer className="pa4 mt5 w-100 flex gray-d justify-between flex-column flex-row-ns">
     © 2021 Jonatas Guerci Maia

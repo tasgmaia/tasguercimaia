@@ -1,5 +1,4 @@
 import React from "react"
-import "./layout.css"
 
 function BigStatement({bgClass, label, statement, col1, col2, col3}) {
   return (

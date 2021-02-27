@@ -1,7 +1,5 @@
 import React from "react"
 
-import "./layout.css"
-
 function CaseHero(props) {
   return (
     <div className={props.heroBG}>

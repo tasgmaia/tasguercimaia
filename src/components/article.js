@@ -1,7 +1,5 @@
 import React from "react"
 
-import "./layout.css"
-
 function Article({link, publication, title}) {
   return (
     <a href={link} target="_blank" className="bg-ac1 no-underline base-w">
