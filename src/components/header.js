@@ -14,11 +14,6 @@ const Header = ({ siteTitle }) => (
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Nanum+Myeongjo&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
-    />
-
     <div
       className='flex justify-between header-m-d'
       style={{
