@@ -79,7 +79,7 @@ function SEO({ description, lang, meta, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [],
+  meta: [`Product Designer`, `UX`, `UI`, `Senior Designer`, `Digital designer`, `Interface`, `Information Architecture`],
   description: `Hey, call me Tas. I'm a digital product designer working to improve people's lives. I love to design solutions through empathy, collaboration, and listening to users`,
 }
 
