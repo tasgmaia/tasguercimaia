@@ -1,10 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/profileimage"
 import SEO from "../components/seo"
-import Article from "../components/article"
 import Case from "../components/case"
 import ArticleList from "../components/articleList"
 import SectionTitle from "../components/sectionTitle"
@@ -13,7 +9,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div style={{ margin: `0 auto`, maxWidth: 1400,}}>
-    {/* HERO BEGINING*/}
     <div
       id="home"
       className="ph5-ns ma3 mt0-ns mt5 pt6 pa5-ns"
@@ -33,11 +28,10 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-    {/* HERO END*/}
-    {/* CASES BEGINING*/}
     <div id="work" className="w-100 mt6 contentMW">
-      <Case interaction
-        CaseImage="caseStone"
+      <Case 
+        // interaction
+        caseImage="caseStone"
         company="Stone Payments 2017"
         title="Mobile point of sale, reaching strategic markets."
         link="/cases/mPOS.jsx"
@@ -45,17 +39,17 @@ const IndexPage = () => (
         // cta="read article →"
       />
       <Case
-        CaseImage="caseVTEX"
+          // interaction
+        caseImage="caseVTEX"
         company="VTEX ecommerce 2020"
         title="An enhanced and user centric customer service experience"
         link="/about"
         cta="Soon"
+        // cta="read article →"
       />
     </div>
-    {/* CASES END*/}
-    {/* ARTICLES BEGINING*/}
     <div id="articles" className="h2"></div>
-    <div className="contentMW w-100 bg-ac2 pa5-ns pa3 pv4">
+    <section className="contentMW w-100 bg-ac2 pa5-ns pa3 pv4">
       <div className="flex-ns justify-between">
         <div className="base-w w-40-ns w-100">
           <SectionTitle
@@ -64,13 +58,11 @@ const IndexPage = () => (
             Here I share the articles that I like most. For more check my medium"
           />
         </div>
-
         <div className="w-50-ns w-100 mt0-ns mt4 pr2">
           <ArticleList />
         </div>
       </div>
-    </div>
-    {/* ARTICLES END*/}
+    </section>
     </div>
   </Layout>
 )

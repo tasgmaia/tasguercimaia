@@ -1,6 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
-
+import leaf from "../images/leaf.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CaseHero from "../components/caseHero"
@@ -23,7 +22,7 @@ const mPOS = () => (
     />
     <BigStatement
       label="Overview"
-      Statement="Brazil has around 45 million people,  without any bank account or any access to financial services producing 817bi reais."
+      statement="Brazil has around 45 million people,  without any bank account or any access to financial services producing 817bi reais."
       col1="In Brazil millions of people, in the working-age, are lacking a formal work position. Therefore they are either dragged into the informal market or become entrepreneurs by necessity.  In this scenario, many companies started to look at these people and began to develop accessible financial services for them. By the time some solutions began to emerge, Stone Co. saw a great opportunity to act."
       col2="The main business advantage, compared to our competitors, was that we had an operation based on personal relationships in small and medium cities. And we designed a singular solution that hadn't predecessor in the Brazilian market."
       bgClass="stone-leaf"
@@ -43,6 +42,9 @@ const mPOS = () => (
     Step3="Flows"
     Step4="Solution"
   />
+
+<img src={leaf}></img>
+
   </Layout>
 )
 

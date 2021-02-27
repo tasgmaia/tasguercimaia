@@ -1,13 +1,8 @@
 import React from "react"
 import Article from "./article"
-// import { Link } from "gatsby"
-// import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
-
-import "./layout.css"
 
 const ArticleList = () => (
-  <div>
+  <>
     <div>
       <Article 
         publication="UX Planet" 
@@ -29,6 +24,6 @@ const ArticleList = () => (
         link="https://brasil.uxdesign.cc/cultura-centrada-no-design-16fdcfe9f47e"
       />
     </div>
-  </div>
+  </>
 )
 export default ArticleList

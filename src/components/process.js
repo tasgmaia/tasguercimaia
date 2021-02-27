@@ -3,8 +3,6 @@ import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
-import "./layout.css"
-
 function Process(props) {
   return (
     <div className="bg-ac2 pt0-ns pt6 mw-100">
