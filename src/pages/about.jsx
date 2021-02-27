@@ -1,15 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Profile from "../components/profileimage"
 
 const About = () => (
   <Layout>
     <SEO title="About" />
     <div className="contentMW pt6-ns flex w-100 justify-center flex-row-ns flex-column">
       <div className="profileImage dn-ns db"></div>
-      <div className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 pr5-ns">
+      <section className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 pr5-ns">
         <h3 className="mt0 normal b gray-e f3-ns f4">About</h3>
         <p className="lh-copy">
           I started my career as a designer after technical school. I worked as
@@ -79,7 +77,7 @@ const About = () => (
           <p className="barlow-m ma2 gray-c f5-ns f6">2018 - present</p>
           <p className="ma2 gray-e b f4-ns f5">VTEX - Ecommerce platform</p>
         </div>
-      </div>
+      </section>
       <div className="profileImage dn db-ns"></div>
     </div>
   </Layout>
