@@ -15,14 +15,13 @@ const IndexPage = () => (
     >
       <div>
         <p className="normal pt6-ns gray-e f-subheadline-l lh-title f2">
-          Hey, call me Tas. I am a product designer transforming the retail
-          industry at{" "}
+          Hey, call me Tas. I am a product designer building tech solutions at{" "}
           <a
-            href="https://vtex.com/us-en/"
+            href="https://www.globo.com/"
             target="_blank"
             class="underline-link normal ph2 gray-e f-headline-l lh-title f2"
           >
-            VTEX
+            Globo
           </a>
           .
         </p>
