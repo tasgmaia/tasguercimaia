@@ -15,7 +15,8 @@ const IndexPage = () => (
     >
       <div>
         <p className="normal pt6-ns gray-e f-subheadline-l lh-title f2">
-          Hey, call me Tas. I am a product designer building tech solutions at{" "}
+          Hey, call me Tas. I am a product designer building 
+          tech solutions at{" "}
           <a
             href="https://www.globo.com/"
             target="_blank"
