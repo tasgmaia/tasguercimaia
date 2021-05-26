@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Experience from "../components/experience"
 
 const About = () => (
   <Layout>
@@ -29,54 +30,55 @@ const About = () => (
           experiences on two Brazilian unicorns when they were scaling their
           business and products.
         </p>
-        <h3 className="mb1 normal mt6-ns mt5 b gray-e f3-ns f4">
-          Work experience
-        </h3>
-        <a className="barlow gray-d f4-ns f6">
-          For more information go to my{" "}
-          <a
-            href="https://www.linkedin.com/in/tasguerci/"
-            target="_blank"
-            class="underline-link normal gray-e"
-          >
-            Linkedin
+
+        <div className="bb gray-b pb3">
+          <h3 className="mb1 normal mt6-ns mt5 b gray-e f3-ns f4">
+            Work experience
+          </h3>
+          <a className="barlow gray-d f4-ns f6">
+            For more information go to my{" "}
+            <a
+              href="https://www.linkedin.com/in/tasguerci/"
+              target="_blank"
+              class="underline-link normal gray-e"
+            >
+              Linkedin
+            </a>
+            .
           </a>
-          .
+        
+        </div>
+        <a className="flex flex-column-reverse" >
+          <Experience
+          date="2012 - 2013"
+          company="Latina - Advertising agency"
+          />
+          <Experience
+          date="2013 - 2014"
+          company="eStocks - Reverse logistics Startup"
+          />
+          <Experience
+          date="2014 - 2015"
+          company="SCAD - Exchange student"
+          />
+          <Experience
+          date="2016 - 2017"
+          company="Rastro - Advertising agency"
+          />
+          <Experience
+          date="2017 - 2018"
+          company="Stone Payments - Acquirer bank"
+          />
+          <Experience
+          date="2018 - 2021"
+          company="VTEX - Ecommerce platform"
+          />
+          <Experience
+          date="2021 - present"
+          company="Globo - Mediatech"
+          />
         </a>
-
-        <div className="bt bb gray-b mt4 pt2 pb2">
-          <p className="barlow-m ma2 gray-c f5-ns f6">2012 - 2013</p>
-          <p className="ma2 gray-e b f4-ns f5">Latina - Advertising agency</p>
-        </div>
-
-        <div className="bb gray-b pt2 pb2">
-          <p className="barlow-m ma2 gray-c f5-ns f6">2013 - 2014</p>
-          <p className="ma2 gray-e b f4-ns f5">
-            eStocks - Reverse logistics Startup
-          </p>
-        </div>
-
-        <div className="bb gray-b pt2 pb2">
-          <p className="barlow-m ma2 gray-c f5-ns f6">2014 - 2015</p>
-          <p className="ma2 gray-e b f4-ns f5">SCAD - Exchange student</p>
-        </div>
-
-        <div className="bb gray-b pt2 pb2">
-          <p className="barlow-m ma2 gray-c f5-ns f6">2016 - 2017</p>
-          <p className="ma2 gray-e b f4-ns f5">Rastro - Advertising agency</p>
-        </div>
-
-        <div className="bb gray-b pt2 pb2">
-          <p className="barlow-m ma2 gray-c f5-ns f6">2017 - 2018</p>
-          <p className="ma2 gray-e b f4-ns f5">
-            Stone Payments - Acquirer bank
-          </p>
-        </div>
-
-        <div className="bb gray-b pt2 pb2">
-          <p className="barlow-m ma2 gray-c f5-ns f6">2018 - present</p>
-          <p className="ma2 gray-e b f4-ns f5">VTEX - Ecommerce platform</p>
-        </div>
+        
       </section>
       <div className="profileImage dn db-ns"></div>
     </div>
