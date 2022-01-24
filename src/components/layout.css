@@ -116,9 +116,7 @@ svg:hover {
 .caseHolder{
 	color: #131313;
 }
-/* .caseHolder:hover{
-	color: #000368;
-} */
+
 .caseStone{
 	background-image: url(../images/cover-stone.png);
 	max-width: 100%;

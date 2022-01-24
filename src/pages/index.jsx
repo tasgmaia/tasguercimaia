@@ -14,13 +14,13 @@ const IndexPage = () => (
       className="ph5-ns ma3 mt0-ns mt5 pt6 pa5-ns"
     >
       <div>
-        <p className="normal pt6-ns gray-e f-subheadline-l lh-title f2">
+        <p className="normal pt6-ns gray-e f-subheadline-l lh-title f2-ns f3">
           Hey, call me Tas. I am a product designer building 
           tech solutions at{" "}
           <a
             href="https://www.globo.com/"
             target="_blank"
-            class="underline-link normal ph2 gray-e f-headline-l lh-title f2"
+            class="underline-link normal ph2 gray-e f-headline-l lh-title f2-ns f3"
           >
             Globo
           </a>
@@ -30,22 +30,22 @@ const IndexPage = () => (
     </div>
     <div id="work" className="w-100 mt6 contentMW">
       <Case 
-        // interaction
+        //interaction
         caseImage="caseStone"
         company="Stone Payments 2017"
         title="Mobile point of sale, reaching strategic markets."
-        link="/cases/mPOS.jsx"
+        link="/mpos"
         cta="Soon"
-        // cta="read article →"
+        //cta="read article →"
       />
       <Case
-          // interaction
+        //interaction
         caseImage="caseVTEX"
         company="VTEX ecommerce 2020"
         title="An enhanced and user centric customer service experience"
         link="/about"
         cta="Soon"
-        // cta="read article →"
+        //cta="read article →"
       />
     </div>
     <div id="articles" className="h2"></div>

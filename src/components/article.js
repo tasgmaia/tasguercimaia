@@ -7,7 +7,7 @@ function Article({link, publication, title}) {
       <div className="pa1 f5 barlow">
       {publication}
       </div>
-      <div className="f4 pa1 lh-copy">
+      <div className="f3-ns f4 pa1 lh-copy">
       {title}
       </div>
       <div className="pa1 barlow f6" >read article →</div>
