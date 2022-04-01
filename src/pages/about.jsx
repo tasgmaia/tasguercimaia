@@ -6,9 +6,9 @@ import Experience from "../components/experience"
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <div className="contentMW pt6-ns flex w-100 justify-center flex-row-ns flex-column">
-      <div className="profileImage dn-ns db"></div>
-      <section className="w-40-ns  lh-copy f4-ns f5 ma0-ns ma3 pr5-ns">
+    <div className="contentMW pt6-l flex w-100 justify-center flex-row-l flex-column">
+      <div className="profileImage dn-l db"></div>
+      <section className="w-40-l mw6 lh-copy f4-l f5 ma0-l ma3 pr5-l">
         <h3 className="mt0 normal b gray-e f3-ns f4">About</h3>
         <p className="lh-copy">
           I started my career as a designer after technical school. I worked as
@@ -80,7 +80,7 @@ const About = () => (
         </a>
         
       </section>
-      <div className="profileImage dn db-ns"></div>
+      <div className="profileImage dn dn-m db-ns"></div>
     </div>
   </Layout>
 )
