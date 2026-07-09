@@ -1,14 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
-// import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
 
-function Process(props) {
+interface ProcessProps {
+  Step1: React.ReactNode
+  Step2: React.ReactNode
+  Step3: React.ReactNode
+  Step4: React.ReactNode
+}
+
+function Process({ Step1, Step2, Step3, Step4 }: ProcessProps) {
   return (
     <div className="bg-ac2 pt0-ns pt6 mw-100">
       <div className="pv6-ns flex justify-center flex-column flex-row-ns flex-column-reverse">
         <label className="barlow gray-d">Process</label>
-        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{props.Step1}</h1>
+        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{Step1}</h1>
         <svg
           width="135"
           height="4"
@@ -24,7 +28,7 @@ function Process(props) {
             stroke="#FAFAFA"
           />
         </svg>
-        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{props.Step2}</h1>
+        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{Step2}</h1>
         <svg
           width="135"
           height="1"
@@ -40,7 +44,7 @@ function Process(props) {
             stroke="#FAFAFA"
           />
         </svg>
-        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{props.Step3}</h1>
+        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{Step3}</h1>
         <svg
           width="135"
           height="1"
@@ -56,7 +60,7 @@ function Process(props) {
             stroke="#FAFAFA"
           />
         </svg>
-        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{props.Step4}</h1>
+        <h1 className="base-w f1-ns normal f4 mt0 pt1 lh-title">{Step4}</h1>
       </div>
     </div>
   )

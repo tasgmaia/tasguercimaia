@@ -1,7 +1,7 @@
 import React from "react"
 import Article from "./article"
 
-const ArticleList = () => (
+const ArticleList: React.FC = () => (
   <>
     <div>
       <Article 
@@ -26,4 +26,5 @@ const ArticleList = () => (
     </div>
   </>
 )
+
 export default ArticleList

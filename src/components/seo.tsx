@@ -6,11 +6,24 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+interface SEOProps {
+  title: string
+  description?: string
+  lang?: string
+  meta?: Array<{ name: string; content: string } | { property: string; content: string }>
+}
+
+const defaultMeta = [
+  `Product Designer`, `UX`, `UI`, `Senior Designer`,
+  `Digital designer`, `Interface`, `Information Architecture`
+]
+
+const defaultDescription = `Hey, call me Tas. I'm a digital product designer working to improve people's lives. I love to design solutions through empathy, collaboration, and listening to users`
+
+function SEO({ description = defaultDescription, lang = "en", meta = [], title }: SEOProps) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,11 +43,9 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
       meta={[
         {
           name: `description`,
@@ -72,22 +83,9 @@ function SEO({ description, lang, meta, title }) {
           property: 'og:image',
           content: 'src/images/tas_maia_og_image.png'
         },
-      ].concat(meta)}
+      ].concat(meta as any)}
     />
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [`Product Designer`, `UX`, `UI`, `Senior Designer`, `Digital designer`, `Interface`, `Information Architecture`],
-  description: `Hey, call me Tas. I'm a digital product designer working to improve people's lives. I love to design solutions through empathy, collaboration, and listening to users`,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

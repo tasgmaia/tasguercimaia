@@ -1,13 +1,16 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import Logo from "./logo.js"
+import Logo from "./logo"
 import "./layout.css"
 import "./tachyons.css"
 
-const Header = ({ siteTitle }) => (
+interface HeaderProps {
+  siteTitle?: string
+}
+
+const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
   <header
-  className='fade z-1 pa2 pt3 ph4-ns pt4-ns fixed-ns absolute  w-100'
+    className='fade z-1 pa2 pt3 ph4-ns pt4-ns fixed-ns absolute  w-100'
   >
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -35,13 +38,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

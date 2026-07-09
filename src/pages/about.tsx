@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Experience from "../components/experience"
 
-const About = () => (
+const About: React.FC = () => (
   <Layout>
     <SEO title="About" />
     <div className="contentMW pt6-l flex w-100 justify-center flex-row-l flex-column">
@@ -35,53 +35,33 @@ const About = () => (
           <h3 className="mb1 normal mt6-ns mt5 b gray-e f3-ns f4">
             Work experience
           </h3>
-          <a className="barlow gray-d f4-ns f6">
+          <span className="barlow gray-d f4-ns f6">
             For more information go to my{" "}
             <a
               href="https://www.linkedin.com/in/tasguerci/"
               target="_blank"
-              class="underline-link normal gray-e"
+              rel="noreferrer"
+              className="underline-link normal gray-e"
             >
               Linkedin
             </a>
             .
-          </a>
-        
+          </span>
         </div>
-        <a className="flex flex-column-reverse" >
-          <Experience
-          date="2012 - 2013"
-          company="Latina - Advertising agency"
-          />
-          <Experience
-          date="2013 - 2014"
-          company="eStocks - Reverse logistics Startup"
-          />
-          <Experience
-          date="2014 - 2015"
-          company="SCAD - Exchange student"
-          />
-          <Experience
-          date="2016 - 2017"
-          company="Rastro - Advertising agency"
-          />
-          <Experience
-          date="2017 - 2018"
-          company="Stone Payments - Acquirer bank"
-          />
-          <Experience
-          date="2018 - 2021"
-          company="VTEX - Ecommerce platform"
-          />
-          <Experience
-          date="2021 - present"
-          company="Globo - Mediatech"
-          />
-        </a>
+        <div className="flex flex-column-reverse">
+          <Experience date="2012 - 2013" company="Latina - Advertising agency" />
+          <Experience date="2013 - 2014" company="eStocks - Reverse logistics Startup" />
+          <Experience date="2014 - 2015" company="SCAD - Exchange student" />
+          <Experience date="2016 - 2017" company="Rastro - Advertising agency" />
+          <Experience date="2017 - 2018" company="Stone Payments - Acquirer bank" />
+          <Experience date="2018 - 2021" company="VTEX - Ecommerce platform" />
+          <Experience date="2021 - present" company="Globo - Mediatech" />
+        </div>
         
       </section>
       <div className="profileImage dn dn-m db-ns"></div>
     </div>
   </Layout>
 )
+
 export default About
