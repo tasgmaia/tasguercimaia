@@ -1,0 +1,12 @@
+---
+interface Props {
+  date: string
+  company: string
+}
+const { date, company } = Astro.props
+---
+
+<div class="border-b border-gray-b py-2">
+  <p class="my-2 font-sans text-sm font-medium text-gray-d md:text-base">{date}</p>
+  <p class="my-2 text-base font-bold text-gray-e md:text-xl">{company}</p>
+</div>

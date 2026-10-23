@@ -1,0 +1,31 @@
+---
+import Logo from "./Logo.astro"
+import { nav } from "../data/site"
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/"
+const isActive = (href: string) => (href === "/" ? path === "/" : path === href || path.startsWith(`${href}/`))
+---
+
+<header class="fade absolute z-10 w-full px-2 pt-3 md:fixed md:px-8 md:pt-6">
+  <div class="mx-auto flex max-w-[1550px] justify-between">
+    <a href="/" aria-label="Tas Guerci Maia, home">
+      <Logo />
+    </a>
+    <nav aria-label="Main" class="m-0 flex flex-col items-end">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            aria-current={isActive(item.href) ? "page" : undefined}
+            class:list={[
+              "px-1 text-base md:mx-2 md:px-2 md:text-xl",
+              isActive(item.href) ? "bg-ac3 text-ac1" : "underline-link text-ink",
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

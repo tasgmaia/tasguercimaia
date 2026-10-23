@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content"
+import Base from "../layouts/Base.astro"
+import CaseCard from "../components/CaseCard.astro"
+import SectionTitle from "../components/SectionTitle.astro"
+import ArticleItem from "../components/ArticleItem.astro"
+import { articles } from "../data/articles"
+
+const cases = (await getCollection("cases")).sort((a, b) => a.data.order - b.data.order)
+---
+
+<Base title="Home">
+  <div class="mx-auto max-w-[1400px]">
+    <div id="home" class="mx-3 mt-0 pt-44 md:mx-0 md:px-20 md:py-20 md:pt-40">
+      <p class="text-3xl leading-tight font-normal text-gray-e md:pt-24 md:text-8xl">
+        Hey, call me Tas. I am a product designer building tech solutions at{" "}
+        <a
+          href="https://www.globo.com/"
+          target="_blank"
+          rel="noreferrer"
+          class="underline-link px-2 text-gray-e">Globo</a
+        >.
+      </p>
+    </div>
+
+    <div id="work" class="content-mw mt-24 w-full">
+      {
+        cases.map((c) => (
+          <CaseCard
+            company={c.data.company}
+            year={c.data.year}
+            title={c.data.title}
+            cover={c.data.cover}
+            coverAlt={c.data.coverAlt}
+            coverBg={c.data.coverBg}
+            coverSize={c.data.coverSize}
+            coverAnchor={c.data.coverAnchor}
+            href={c.data.status === "published" ? `/work/${c.id}` : undefined}
+            cta={c.data.status === "published" ? "view case →" : "Soon"}
+          />
+        ))
+      }
+    </div>
+
+    <div id="articles" class="h-8"></div>
+    <section class="content-mw w-full bg-ac2 px-4 py-6 text-paper md:p-8">
+      <div class="flex flex-col justify-between md:flex-row">
+        <div class="w-full md:w-2/5">
+          <SectionTitle
+            name="Articles"
+            subtitle="Over the years I spent sometime sharing what I've learned and thought about design. Here I share the articles that I like most. For more check my Medium."
+          />
+        </div>
+        <div class="mt-6 flex w-full flex-col gap-6 pr-2 md:mt-0 md:w-1/2">
+          {articles.map((a) => <ArticleItem {...a} />)}
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>

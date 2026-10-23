@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@import "@fontsource/barlow/400.css";
+@import "@fontsource/barlow/500.css";
+@import "@fontsource/nanum-myeongjo/400.css";
+
+/* Tokens do "Meu portfolio DS", migrados do Tachyons/layout.css do Gatsby. */
+@theme {
+  --color-ac1: #0007dd;
+  --color-ac2: #000368;
+  --color-ac3: #e9f0f4;
+  --color-paper: #fafafa;
+  --color-ink: #131313;
+  --color-gray-a: #efefef;
+  --color-gray-b: #e5e5e5;
+  --color-gray-c: #b8b8b8;
+  --color-gray-d: #6d6d6d;
+  --color-gray-e: #484848;
+  --color-case-stone: #e9f4ed;
+  --color-case-vtex: #fad9d2;
+  --color-ac2-hover: #000484;
+
+  --font-serif: "Nanum Myeongjo", Georgia, serif;
+  --font-sans: "Barlow", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-size: 112.5%;
+    font-family: var(--font-serif);
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-wrap: break-word;
+    font-kerning: normal;
+  }
+
+  p {
+    margin-block: 1em;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-ac1);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  .content-mw {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .fade {
+    animation: fadein 1.2s ease-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade {
+      animation: none;
+    }
+  }
+
+  /* Link com sublinhado animado (de Will King, https://codepen.io/Wking/pen/BdmpVx) */
+  .underline-link {
+    background-image: linear-gradient(120deg, #e9f0f4 0%, #e9f0f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.092em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    text-decoration: none;
+  }
+  .underline-link:hover,
+  .underline-link:active {
+    color: var(--color-ac1);
+    background-size: 100% 100%;
+  }
+
+  .article-link {
+    transition: background-color 0.25s ease-in;
+    border-radius: 4px;
+  }
+  .article-link:hover,
+  .article-link:active {
+    background-color: var(--color-ac2-hover);
+  }
+
+  .logo-mark {
+    fill: var(--color-ac2);
+    stroke: var(--color-paper);
+    stroke-width: 0.2px;
+    transition: fill 0.25s ease-in;
+  }
+  a:hover > .logo-mark {
+    fill: var(--color-ac1);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

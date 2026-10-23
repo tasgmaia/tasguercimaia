@@ -1,0 +1,52 @@
+---
+company: Stone Payments
+year: 2017
+title: Mobile point of sale, reaching strategic markets.
+status: published
+order: 1
+cover: ../../assets/cover-stone.png
+coverAlt: Mobile card reader from the Stone Payments mPOS
+coverBg: "#e9f4eb"
+coverSize: 50%
+coverAnchor: top
+---
+
+import CaseHero from "../../components/case/CaseHero.astro"
+import BigStatement from "../../components/case/BigStatement.astro"
+import ImageLeft from "../../components/case/ImageLeft.astro"
+import Process from "../../components/case/Process.astro"
+import { Image } from "astro:assets"
+import cover from "../../assets/cover-stone.png"
+import pinpad from "../../assets/pinpad.png"
+import leaf from "../../assets/leaf.png"
+
+<CaseHero
+  bg="#e9f4ed"
+  image={cover}
+  imageAlt="Stone mPOS reader and app"
+  label="Stone Payments 2018"
+  title="Reaching strategic markets with a new mPOS"
+  description="Stone was the fifth Brazilian unicorn and the first independent Acquirer Bank to operate in Brazil. By the time we built this project, there was a huge market with only one competitor. There was a need to design a product concerning this growing and unexplored market."
+/>
+
+<BigStatement
+  label="Overview"
+  statement="Brazil has around 45 million people, without any bank account or any access to financial services producing 817bi reais."
+  col1="In Brazil millions of people, in the working-age, are lacking a formal work position. Therefore they are either dragged into the informal market or become entrepreneurs by necessity. In this scenario, many companies started to look at these people and began to develop accessible financial services for them. By the time some solutions began to emerge, Stone Co. saw a great opportunity to act."
+  col2="The main business advantage, compared to our competitors, was that we had an operation based on personal relationships in small and medium cities. And we designed a singular solution that hadn't predecessor in the Brazilian market."
+/>
+
+<ImageLeft
+  bg="#e9f4ed"
+  image={pinpad}
+  imageAlt="Stone pinpad"
+  label="Objective"
+  title="Empower small entrepreneurs without bank accounts."
+  description="Provide to these people an affordable financial solution to help them to achieve a sustainable business growth."
+  label2="User goal"
+  title2="Provide digital payment methods to their customers and manage their sales income."
+/>
+
+<Process steps={["Research", "Strategy", "Flows", "Solution"]} />
+
+<Image src={leaf} alt="" width={200} class="mx-auto my-16" />

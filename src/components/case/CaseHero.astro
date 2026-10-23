@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro"
+
+interface Props {
+  bg: string
+  label: string
+  title: string
+  description: string
+  image: ImageMetadata
+  imageAlt?: string
+}
+const { bg, label, title, description, image, imageAlt = "" } = Astro.props
+---
+
+<section style={`background-color:${bg}`}>
+  <div class="flex max-w-full flex-col-reverse items-center justify-center pt-44 md:flex-row md:py-24 md:pt-24">
+    <div class="m-0 w-full max-w-xl p-4 md:m-8 md:w-3/5">
+      <p class="font-sans text-gray-d">{label}</p>
+      <h1 class="mt-0 pt-1 text-xl leading-tight md:text-3xl">{title}</h1>
+      <p class="text-sm leading-relaxed md:text-base">{description}</p>
+    </div>
+    <Image src={image} alt={imageAlt} width={700} loading="eager" class="h-auto w-full max-w-[700px]" />
+  </div>
+</section>

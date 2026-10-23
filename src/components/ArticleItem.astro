@@ -1,0 +1,16 @@
+---
+interface Props {
+  link: string
+  publication: string
+  title: string
+}
+const { link, publication, title } = Astro.props
+---
+
+<a href={link} target="_blank" rel="noreferrer" class="block bg-ac1 text-paper no-underline">
+  <div class="article-link p-4">
+    <div class="p-1 font-sans text-lg">{publication}</div>
+    <div class="p-1 text-xl leading-relaxed">{title}</div>
+    <div class="p-1 font-sans text-base">read article →</div>
+  </div>
+</a>
