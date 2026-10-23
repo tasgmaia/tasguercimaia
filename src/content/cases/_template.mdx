@@ -1,0 +1,21 @@
+---
+# Modelo para novos cases. Copie para src/content/cases/<slug>.mdx (arquivos com "_" são ignorados).
+# status: "soon" aparece na Home e em /work sem link; "published" gera /work/<slug>.
+company: Empresa
+year: 2026
+title: Resumo do case em uma frase.
+status: soon
+order: 3
+cover: ../../assets/cover-stone.png
+coverAlt: ""
+coverBg: "#e9f0f4"
+coverSize: 50%
+coverAnchor: top
+---
+
+import CaseHero from "../../components/case/CaseHero.astro"
+import BigStatement from "../../components/case/BigStatement.astro"
+import ImageLeft from "../../components/case/ImageLeft.astro"
+import Process from "../../components/case/Process.astro"
+
+{/* Kit de componentes: CaseHero, BigStatement, ImageLeft, Process. Veja mpos.mdx como referência. */}
