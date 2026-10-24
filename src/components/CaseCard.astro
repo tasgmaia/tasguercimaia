@@ -20,7 +20,7 @@ const { company, year, title, cover, coverAlt = "", coverBg, coverSize = "50%", 
 const Tag = href ? "a" : "div"
 ---
 
-<Tag href={href} class="mb-16 block text-ink no-underline md:mb-24">
+<Tag href={href} class:list={["mb-16 block text-ink no-underline md:mb-24", href && "transition-colors duration-200 hover:text-ac1 focus-visible:text-ac1"]}>
   <div
     class:list={["flex h-[250px] w-full justify-center overflow-hidden md:h-[500px]", coverAnchor === "top" ? "items-start pt-8 md:pt-[60px]" : "items-end"]}
     style={`background-color:${coverBg}`}
