@@ -22,7 +22,7 @@ src/
   content/cases/     um .mdx por case (mpos, customer-360; _template.mdx é o modelo)
   data/              site.ts (nome, menu, redes), articles.ts, experience.ts
   layouts/Base.astro head, SEO, GTM, header e footer
-  pages/             /, /about, /work, /work/[slug], /process, /writing, 404
+  pages/             /, /about, /work, /work/[slug], /writing, 404
   styles/global.css tokens do design system (cores, fontes)
 public/              favicon, imagem OG, robots.txt
 ```
@@ -36,6 +36,5 @@ public/              favicon, imagem OG, robots.txt
 ## Pendências
 
 - Definir o domínio final e trocar `site` em `astro.config.mjs` e a URL do sitemap em `public/robots.txt`.
-- Escrever o conteúdo de `/process` (hoje só a estrutura, com `noindex`).
 - Incluir o artigo do HCII 2026 em `src/data/articles.ts`.
 - Novos cases (DSCorp, DTV+) ainda não existem. O Customer 360 não tem seção de Outcomes (o texto original não tinha).
