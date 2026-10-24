@@ -106,15 +106,6 @@
     }
   }
 
-  .article-link {
-    transition: background-color 0.25s ease-in;
-    border-radius: 4px;
-  }
-  .article-link:hover,
-  .article-link:active {
-    background-color: var(--color-ac2-hover);
-  }
-
   .logo-mark {
     fill: var(--color-ac2);
     stroke: var(--color-paper);

@@ -7,8 +7,8 @@ interface Props {
 const { link, publication, title } = Astro.props
 ---
 
-<a href={link} target="_blank" rel="noreferrer" class="block bg-ac1 text-paper no-underline">
-  <div class="article-link p-4">
+<a href={link} target="_blank" rel="noreferrer" class="block rounded bg-ac2 text-paper no-underline transition-colors duration-250 ease-in hover:bg-ac1 focus-visible:bg-ac1">
+  <div class="p-4">
     <div class="p-1 font-sans text-lg">{publication}</div>
     <div class="p-1 text-xl leading-relaxed">{title}</div>
     <div class="p-1 font-sans text-base">read article →</div>
