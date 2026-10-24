@@ -22,7 +22,7 @@ src/
   content/cases/     um .mdx por case (mpos, customer-360; _template.mdx é o modelo)
   data/              site.ts (nome, menu, redes), articles.ts, experience.ts
   layouts/Base.astro head, SEO, GTM, header e footer
-  pages/             /, /about, /work, /work/[slug], /writing, 404
+  pages/             /, /about, /work, /work/[slug], /writing (fora do menu e do sitemap, noindex), 404
   styles/global.css tokens do design system (cores, fontes)
 public/              favicon, imagem OG, robots.txt
 ```

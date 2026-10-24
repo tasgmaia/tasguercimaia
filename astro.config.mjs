@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite"
 // Troque `site` quando o domínio final for definido.
 export default defineConfig({
   site: "https://tasguercimaia.netlify.app",
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap({ filter: (page) => !page.endsWith("/writing/") })],
   vite: {
     plugins: [tailwindcss()],
   },

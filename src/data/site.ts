@@ -12,7 +12,6 @@ export const nav = [
   { label: "Home", href: "/" },
   { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
-  { label: "Writing", href: "/writing" },
 ]
 
 export const socials = [
