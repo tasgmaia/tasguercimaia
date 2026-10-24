@@ -1,0 +1,107 @@
+---
+company: VTEX
+year: 2021
+title: An enhanced and user-centric customer service experience
+status: published
+order: 2
+cover: ../../assets/cover-vtex.png
+coverAlt: VTEX Customer 360 interface
+coverBg: "#fad9d2"
+coverSize: 80%
+coverAnchor: bottom
+---
+
+import CaseIntro from "../../components/case/CaseIntro.astro"
+import CaseCover from "../../components/case/CaseCover.astro"
+import Section from "../../components/case/Section.astro"
+import Figure from "../../components/case/Figure.astro"
+import ImageRow from "../../components/case/ImageRow.astro"
+import Quote from "../../components/case/Quote.astro"
+import ProcessIndex from "../../components/case/ProcessIndex.astro"
+import DataSources from "../../components/case/DataSources.astro"
+import BackLink from "../../components/case/BackLink.astro"
+import hero from "../../assets/cases/customer-360/hero.jpg"
+import summary from "../../assets/cases/customer-360/summary.jpg"
+import research from "../../assets/cases/customer-360/research.jpg"
+import clients from "../../assets/cases/customer-360/clients.jpg"
+import dashboard from "../../assets/cases/customer-360/dashboard.jpg"
+import detailCustomer from "../../assets/cases/customer-360/detail-customer.jpg"
+import detailRecs from "../../assets/cases/customer-360/detail-recs.jpg"
+
+<CaseIntro
+  label="VTEX 2021"
+  title="An enhanced and user-centric customer service experience"
+  description="VTEX is a commerce platform and the 10th Brazilian Unicorn, with a software solution growing business digitally. The company's most significant differentiation is a native omnichannel system that allows customers to manage multiple channels in a single solution."
+/>
+
+<CaseCover image={hero} alt="Customer 360 screen in the VTEX admin: customer summary, order list and interaction timeline" />
+
+<Section label="Overview" title="An Omnichannel Customer Relationship Manager for retailers">
+
+As the e-commerce business becomes more competitive, it gets harder for retailers to increase customer lifetime value (CLTV). One of the keys that enable retailers to push themselves above this issue is to deeply identify, understand, and address their customers' needs better and faster than their competitors by knowing the touch points the shopper had with the brand.
+
+In order to address those needs, most e-commerce platforms on the market offer an unstructured view of customer data. This project aimed to create a new information architecture with a data set that was available inside the VTEX platform. By restructuring these data we enabled users to access actionable data from users providing practical information and insights about shoppers.
+
+</Section>
+
+<Figure
+  image={summary}
+  alt="Customer summary panel: customer since, total purchases, purchases, average ticket, engagement score, purchases per category and lifetime value chart"
+/>
+
+<Section label="Project Objective" title="Increase customer lifetime value by improving retention strategies, with a focus on customer care experience. By increasing retention, we can make shoppers impact CLTV." />
+
+<Section label="User goal" title="Allow stakeholders, especially customer service and sales representatives, to improve their relationships with shoppers" />
+
+<ProcessIndex
+  label="The Process"
+  items={[
+    { text: "User behavioral research", href: "#research" },
+    { text: "Product strategic modeling", href: "#strategy" },
+  ]}
+/>
+
+<Section id="research" label="Competitor analysis and user behavioral research" title="We conducted immersive research to understand how VTEX's customers structured their CX operations." />
+
+<Figure
+  image={research}
+  alt="Survey results on the VTEX admin: respondent roles, time using VTEX, most used areas and most important tasks, next to a task-by-task spreadsheet"
+/>
+
+<Section>
+
+The research process had two steps. First, we shared a formulary to understand how customers related to the platform. This research began in a context where the company didn't have a continuous listening program. So we needed to map the perceptions that users had to map experience problems. With this step, we found the need to improve the CX experience. Users had the perception that they could improve their operations by creating a more efficient experience.
+
+Secondly, we promoted a deep dive into CX operations and visited the call centers of customers such as C&A, Drogaria São Paulo, RIHappy, and Exito. These customers represented a diverse base since they had different operations and were focused on different retail markets. From fashion to grocery we were able to see their need onsite.
+
+</Section>
+
+<Figure image={clients} alt="Logos of the visited customers: C&A, Drogaria São Paulo, RIHappy and Exito" narrow />
+
+<Section id="strategy" label="Product strategic modeling" />
+
+<Quote source="Drogaria São Paulo user quote">“CX operators lose time with using multiple tools while lead time is critical to their daily job”</Quote>
+
+<Section>
+
+After these rounds of research, we started a strategic modeling process. We interviewed important stakeholders to understand their points of view regarding the creation of a new product. With this investigation, we delimited the new product to be the single source of truth about shoppers' data.
+
+Then we began a process to map the different sources of data currently available in the platform. With these data, we started the design process to deliver a concise, performative, and smooth experience.
+
+</Section>
+
+<DataSources rowLabel="Customers" columns={["Orders", "Subscription", "Profile", "Promotions", "Channels"]} />
+
+<Figure
+  image={dashboard}
+  alt="Customer 360 screen: summary, orders table with tabs, customer details, interaction timeline and product recommendations"
+/>
+
+<ImageRow
+  images={[
+    { src: detailCustomer, alt: "Customer panel with contact data, last shipping address and interactions for today and yesterday" },
+    { src: detailRecs, alt: "Instagram interaction, and product recommendations based on the last purchase" },
+  ]}
+/>
+
+<BackLink />

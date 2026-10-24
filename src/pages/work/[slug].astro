@@ -11,6 +11,6 @@ const { entry } = Astro.props
 const { Content } = await render(entry)
 ---
 
-<Base title={entry.data.company} description={entry.data.title}>
+<Base title={`${entry.data.company} ${entry.data.year}`} description={entry.data.title}>
   <Content />
 </Base>

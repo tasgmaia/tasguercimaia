@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro"
+
+interface Props {
+  image: ImageMetadata
+  alt: string
+  caption?: string
+  /** Coluna de texto (800px) em vez da largura de 1200px. */
+  narrow?: boolean
+}
+const { image, alt, caption, narrow = false } = Astro.props
+---
+
+<figure class:list={["mx-auto my-8 w-full px-4 md:my-12", narrow ? "max-w-[800px]" : "max-w-[1200px]"]}>
+  <Image src={image} alt={alt} widths={[640, 1200, 2000]} sizes="(min-width: 1232px) 1200px, 100vw" class="block h-auto w-full" />
+  {caption && <figcaption class="mt-3 font-sans text-sm text-gray-d">{caption}</figcaption>}
+</figure>

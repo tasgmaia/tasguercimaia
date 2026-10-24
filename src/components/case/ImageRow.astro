@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro"
+
+interface Props {
+  images: { src: ImageMetadata; alt: string }[]
+}
+const { images } = Astro.props
+---
+
+<div class="mx-auto my-8 grid w-full max-w-[1200px] grid-cols-1 gap-4 px-4 md:my-12 md:grid-cols-2">
+  {
+    images.map((img) => (
+      <Image src={img.src} alt={img.alt} widths={[640, 1200]} sizes="(min-width: 1232px) 600px, (min-width: 768px) 50vw, 100vw" class="block h-auto w-full" />
+    ))
+  }
+</div>

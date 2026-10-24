@@ -1,0 +1,18 @@
+---
+// Bloco de texto em coluna estreita. Sem `label` e sem `title`, vira só um bloco de parágrafos.
+interface Props {
+  id?: string
+  label?: string
+  title?: string
+}
+const { id, label, title } = Astro.props
+const compact = !label && !title
+---
+
+<section id={id} class:list={["mx-auto w-full max-w-[800px] scroll-mt-24 px-4", compact ? "py-4 md:py-6" : "pt-12 pb-4 md:pt-20"]}>
+  {label && <p class="m-0 font-sans text-gray-d">{label}</p>}
+  {title && <h2 class="mt-2 mb-8 text-2xl leading-tight font-normal md:text-4xl">{title}</h2>}
+  <div class="case-prose">
+    <slot />
+  </div>
+</section>

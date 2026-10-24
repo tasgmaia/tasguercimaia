@@ -13,9 +13,17 @@ coverSize: 50%
 coverAnchor: top
 ---
 
-import CaseHero from "../../components/case/CaseHero.astro"
-import BigStatement from "../../components/case/BigStatement.astro"
-import ImageLeft from "../../components/case/ImageLeft.astro"
-import Process from "../../components/case/Process.astro"
+import CaseIntro from "../../components/case/CaseIntro.astro"
+import CaseCover from "../../components/case/CaseCover.astro"
+import Section from "../../components/case/Section.astro"
+import Figure from "../../components/case/Figure.astro"
+import ImageRow from "../../components/case/ImageRow.astro"
+import Quote from "../../components/case/Quote.astro"
+import Stats from "../../components/case/Stats.astro"
+import ProcessIndex from "../../components/case/ProcessIndex.astro"
+import BackLink from "../../components/case/BackLink.astro"
 
-{/* Kit de componentes: CaseHero, BigStatement, ImageLeft, Process. Veja mpos.mdx como referência. */}
+{/* Kit em src/components/case/. Referências completas: mpos.mdx e customer-360.mdx.
+    Section: label + title opcionais; sem os dois, vira só um bloco de parágrafos.
+    Figure: imagem em 1200px (ou `narrow` para a coluna de texto). ImageRow: duas imagens lado a lado.
+    Imagens vão em src/assets/cases/<slug>/ e entram por import. */}

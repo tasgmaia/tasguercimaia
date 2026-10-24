@@ -1,0 +1,28 @@
+---
+// Diagrama do case Customer 360: uma linha (entidade) cruzada por colunas (fontes de dados).
+interface Props {
+  rowLabel: string
+  columns: string[]
+}
+const { rowLabel, columns } = Astro.props
+const label = `Diagram: ${rowLabel} crossed with ${columns.join(", ")}`
+---
+
+<figure class="mx-auto my-8 w-full max-w-[1200px] px-4 md:my-12" role="img" aria-label={label}>
+  <div class="overflow-x-auto bg-white">
+    <div class="relative mx-auto h-[260px] min-w-[680px] max-w-[1000px] p-8" aria-hidden="true">
+      <div
+        class="absolute inset-x-8 top-[100px] flex h-[72px] items-center border border-ac2 bg-ac2/10 pl-6 font-sans text-ac2"
+      >
+        {rowLabel}
+      </div>
+      <div class="absolute inset-y-0 right-[2.5%] left-[17%] flex gap-[2%] pt-8">
+        {
+          columns.map((c) => (
+            <div class="h-[160px] flex-1 border border-ac2 bg-ac2/10 p-3 font-sans text-ac2">{c}</div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</figure>

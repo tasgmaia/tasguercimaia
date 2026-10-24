@@ -1,0 +1,10 @@
+---
+interface Props {
+  href?: string
+}
+const { href = "/work" } = Astro.props
+---
+
+<div class="my-24 flex justify-center">
+  <a href={href} class="bg-ac3 px-6 py-2 font-sans text-gray-e no-underline hover:text-ac1">← Back to work</a>
+</div>

@@ -1,0 +1,13 @@
+---
+interface Props {
+  source: string
+}
+const { source } = Astro.props
+---
+
+<figure class="mx-auto my-12 w-full max-w-[800px] px-4 text-center md:my-16">
+  <blockquote class="m-0 text-2xl leading-snug md:text-4xl">
+    <slot />
+  </blockquote>
+  <figcaption class="mt-4 font-sans text-gray-e">{source}</figcaption>
+</figure>

@@ -1,6 +1,6 @@
 ---
 company: Stone Payments
-year: 2017
+year: 2018
 title: Mobile point of sale, reaching strategic markets.
 status: published
 order: 1
@@ -11,42 +11,118 @@ coverSize: 50%
 coverAnchor: top
 ---
 
-import CaseHero from "../../components/case/CaseHero.astro"
-import BigStatement from "../../components/case/BigStatement.astro"
-import ImageLeft from "../../components/case/ImageLeft.astro"
-import Process from "../../components/case/Process.astro"
-import { Image } from "astro:assets"
-import cover from "../../assets/cover-stone.png"
-import pinpad from "../../assets/pinpad.png"
-import leaf from "../../assets/leaf.png"
+import CaseIntro from "../../components/case/CaseIntro.astro"
+import CaseCover from "../../components/case/CaseCover.astro"
+import Section from "../../components/case/Section.astro"
+import Figure from "../../components/case/Figure.astro"
+import ImageRow from "../../components/case/ImageRow.astro"
+import Quote from "../../components/case/Quote.astro"
+import Stats from "../../components/case/Stats.astro"
+import ProcessIndex from "../../components/case/ProcessIndex.astro"
+import BackLink from "../../components/case/BackLink.astro"
+import hero from "../../assets/cases/mpos/hero.jpg"
+import reader from "../../assets/cases/mpos/reader.jpg"
+import benchmark from "../../assets/cases/mpos/benchmark.jpg"
+import serviceCycle from "../../assets/cases/mpos/service-cycle.jpg"
+import flows from "../../assets/cases/mpos/flows.jpg"
+import sell from "../../assets/cases/mpos/sell.jpg"
+import settings from "../../assets/cases/mpos/settings.jpg"
+import accountAdded from "../../assets/cases/mpos/account-added.jpg"
+import menu from "../../assets/cases/mpos/menu.jpg"
 
-<CaseHero
-  bg="#e9f4ed"
-  image={cover}
-  imageAlt="Stone mPOS reader and app"
+<CaseIntro
   label="Stone Payments 2018"
   title="Reaching strategic markets with a new mPOS"
-  description="Stone was the fifth Brazilian unicorn and the first independent Acquirer Bank to operate in Brazil. By the time we built this project, there was a huge market with only one competitor. There was a need to design a product concerning this growing and unexplored market."
+  description="Stone was the 5th Brazilian unicorn and the first independent Acquirer Bank to operate in Brazil. By the time we built this project, there was a huge market opportunity where only one player operated. Stone aimed at this unexplored market with a strategic role in the IPO."
 />
 
-<BigStatement
-  label="Overview"
-  statement="Brazil has around 45 million people, without any bank account or any access to financial services producing 817bi reais."
-  col1="In Brazil millions of people, in the working-age, are lacking a formal work position. Therefore they are either dragged into the informal market or become entrepreneurs by necessity. In this scenario, many companies started to look at these people and began to develop accessible financial services for them. By the time some solutions began to emerge, Stone Co. saw a great opportunity to act."
-  col2="The main business advantage, compared to our competitors, was that we had an operation based on personal relationships in small and medium cities. And we designed a singular solution that hadn't predecessor in the Brazilian market."
+<CaseCover image={hero} alt="Two smartphones showing the Stone mPOS app: the sale keypad and the main menu" />
+
+<Section label="Overview" title="Brazil has around 45 million people, without any bank account or any access to financial services producing 817bi reais in products and services">
+
+In Brazil millions of people, in the working-age, are lacking a formal work position. Therefore they are either dragged into the informal market or become entrepreneurs by necessity. In this scenario, many companies started to look at these people and began to develop accessible financial services for them.
+
+By the time some solutions began to emerge, Stone Co. saw a great opportunity to act. The main business advantage, compared to our competitors, was that we had an operation based on personal relationships in small and medium cities. And we designed a singular solution that had no predecessor in the Brazilian market.
+
+</Section>
+
+<Figure image={reader} alt="Stone card reader with a PIN pad and a display showing a password field" />
+
+<Section label="Project Objective" title="Provide an affordable solution to small entrepreneurs without bank accounts and help them achieve sustainable business growth." />
+
+<Section label="User goal" title="Provide digital payment methods to their customers and manage their sales income." />
+
+<ProcessIndex
+  items={[
+    { text: "Competitor analysis and user behavioral research", href: "#research" },
+    { text: "Product strategic modeling", href: "#strategy" },
+    { text: "Outcomes", href: "#outcomes" },
+  ]}
 />
 
-<ImageLeft
-  bg="#e9f4ed"
-  image={pinpad}
-  imageAlt="Stone pinpad"
-  label="Objective"
-  title="Empower small entrepreneurs without bank accounts."
-  description="Provide to these people an affordable financial solution to help them to achieve a sustainable business growth."
-  label2="User goal"
-  title2="Provide digital payment methods to their customers and manage their sales income."
+<Section id="research" label="Competitor analysis and user behavioral research" title="This product targeted a market unknown to the company at this point. So we would have challenges modeling both the product and service experiences." />
+
+<Figure image={benchmark} alt="Logos of the benchmarked companies: Square, Sumup and PagSeguro" narrow />
+
+<Section>
+
+When we built this app, there was only one player in Brazil in this specific market. Then we did a deep benchmark to understand how the service worked. We analyzed three companies on this benchmark. The first was the single-player in Brazil at this point. The two other were international players that targeted the same kind of audience. Also, we conducted interviews with users that were familiar with our competitor's current solution.
+
+We had two crucial outputs of this phase. First, we found a strategic direction for the product, second, we designed a diagram that helped the team organize the service in many areas, such as customer service.
+
+</Section>
+
+<Figure
+  image={serviceCycle}
+  alt="Service cycle diagram. Discovery, evaluation and acquisition lead to a cycle of identification, pairing the PIN pad, receiving payments, managing the account and support. Churn paths: bankruptcy and expansion."
 />
 
-<Process steps={["Research", "Strategy", "Flows", "Solution"]} />
+<Section id="strategy" label="Product strategic modeling" />
 
-<Image src={leaf} alt="" width={200} class="mx-auto my-16" />
+<Quote source="Main competitor's user quote">“I don't understand why I have to use two apps to operate my business”</Quote>
+
+<Section>
+
+The most important decision on the strategic and architectural side was that we would have a single app. This decision came in opposition to the competitor's solution where users had to download two apps, one for transactions and the other to manage. The two apps' solution was by far one of the main pain points of users, on the other hand, it was a quick win to differentiate and quickly build a significant user base.
+
+Therefore, during the Information Architecture process, we managed to design three main flows, identification, selling and managing. Each one of these flows with different intensity of use. For example, the identification flow was intended to be used just while creating an account or login in. The selling flow was intended to be the most used, so it worked as the main flow, and the managing was designed to be a secondary flow.
+
+</Section>
+
+<Figure
+  image={flows}
+  alt="Information architecture with three flows: identification, selling and managing"
+/>
+
+<Figure image={sell} alt="Hand holding a phone with the Stone app sale screen: amount R$200,00 and a numeric keypad" />
+
+<ImageRow
+  images={[
+    { src: settings, alt: "Settings screen listing profile, bank accounts, readers, receivables and card brands" },
+    { src: accountAdded, alt: "Confirmation screen: bank account added successfully" },
+  ]}
+/>
+
+<Figure image={menu} alt="Main menu of the app with the options sell, balance and transfer" />
+
+<Section id="outcomes" label="Outcomes">
+
+<Stats
+  items={[
+    { value: "1.5", unit: "k", label: "Progressive rollout from 15 to 1.5k in two weeks" },
+    { value: "4.5", label: "Stars on playstore" },
+    { value: "30", unit: "k", label: "Transactions on the first month" },
+  ]}
+/>
+
+</Section>
+
+<Section label="Technical information">
+
+My role on this project was product designer. I conducted the whole process by myself. The design structure had a manager connecting the team and Directors/C level. The squad also had one backend and two frontend/mobile developers.
+
+This project release year was 2018. The product had some changes on the app. Although, the single app solution was key for the company and is currently established on the company.
+
+</Section>
+
+<BackLink />

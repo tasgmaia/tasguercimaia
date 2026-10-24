@@ -1,0 +1,20 @@
+---
+interface Props {
+  items: { value: string; unit?: string; label: string }[]
+}
+const { items } = Astro.props
+---
+
+<ul class="m-0 grid list-none grid-cols-1 gap-10 p-0 md:grid-cols-3 md:gap-8">
+  {
+    items.map((item) => (
+      <li class="m-0">
+        <p class="m-0 text-6xl leading-none">
+          {item.value}
+          {item.unit && <span class="text-3xl">{item.unit}</span>}
+        </p>
+        <p class="mt-4 mb-0 font-sans text-lg leading-snug text-gray-e">{item.label}</p>
+      </li>
+    ))
+  }
+</ul>

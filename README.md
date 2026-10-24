@@ -18,8 +18,8 @@ npm run check     # checagem de tipos
 src/
   assets/            imagens (otimizadas pelo Astro no build)
   components/        Header, Footer, CaseCard, ArticleItem...
-  components/case/   kit dos cases: CaseHero, BigStatement, ImageLeft, Process
-  content/cases/     um .mdx por case (mpos, vtex; _template.mdx é o modelo)
+  components/case/   kit dos cases: CaseIntro, CaseCover, Section, Figure, ImageRow, Quote, Stats...
+  content/cases/     um .mdx por case (mpos, customer-360; _template.mdx é o modelo)
   data/              site.ts (nome, menu, redes), articles.ts, experience.ts
   layouts/Base.astro head, SEO, GTM, header e footer
   pages/             /, /about, /work, /work/[slug], /process, /writing, 404
@@ -38,4 +38,4 @@ public/              favicon, imagem OG, robots.txt
 - Definir o domínio final e trocar `site` em `astro.config.mjs` e a URL do sitemap em `public/robots.txt`.
 - Escrever o conteúdo de `/process` (hoje só a estrutura, com `noindex`).
 - Incluir o artigo do HCII 2026 em `src/data/articles.ts`.
-- Novos cases (DSCorp, DTV+, Customer 360) ainda não existem; o card do VTEX segue como "Soon".
+- Novos cases (DSCorp, DTV+) ainda não existem. O Customer 360 não tem seção de Outcomes (o texto original não tinha).
