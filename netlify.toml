@@ -15,12 +15,12 @@
 # rewrite: a URL do navegador continua no portfolio).
 [[redirects]]
   from = "/dithering-generator"
-  to = "https://ephemeral-travesseiro-6fede3.netlify.app/"
+  to = "https://dithering-generator.netlify.app/"
   status = 200
   force = true
 
 [[redirects]]
   from = "/dithering-generator/*"
-  to = "https://ephemeral-travesseiro-6fede3.netlify.app/:splat"
+  to = "https://dithering-generator.netlify.app/:splat"
   status = 200
   force = true
