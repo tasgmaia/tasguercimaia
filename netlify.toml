@@ -9,3 +9,18 @@
   for = "/_astro/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Ferramenta de dithering: vive no repo tasgmaia/dithering-generator, com deploy
+# próprio no Netlify, e aparece aqui em /dithering-generator via proxy (status 200 =
+# rewrite: a URL do navegador continua no portfolio).
+[[redirects]]
+  from = "/dithering-generator"
+  to = "https://ephemeral-travesseiro-6fede3.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/dithering-generator/*"
+  to = "https://ephemeral-travesseiro-6fede3.netlify.app/:splat"
+  status = 200
+  force = true
